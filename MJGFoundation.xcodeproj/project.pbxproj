@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9EB54C014A609CD003B4206 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BF14A609CD003B4206 /* Foundation.framework */; };
+		C9EB54D314A60A2D003B4206 /* MJGFoundation-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54D214A60A2D003B4206 /* MJGFoundation-Prefix.pch */; };
+		C9EB54FC14A60B60003B4206 /* NSData-MJGZip.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54D714A60B60003B4206 /* NSData-MJGZip.h */; };
+		C9EB54FD14A60B60003B4206 /* NSData-MJGZip.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB54D814A60B60003B4206 /* NSData-MJGZip.m */; };
+		C9EB54FE14A60B60003B4206 /* NSDate-MJGFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54DA14A60B60003B4206 /* NSDate-MJGFormat.h */; };
+		C9EB54FF14A60B60003B4206 /* NSDate-MJGFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB54DB14A60B60003B4206 /* NSDate-MJGFormat.m */; };
+		C9EB550214A60B60003B4206 /* NSDictionary-MJGURLEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54DF14A60B60003B4206 /* NSDictionary-MJGURLEncode.h */; };
+		C9EB550314A60B60003B4206 /* NSDictionary-MJGURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB54E014A60B60003B4206 /* NSDictionary-MJGURLEncode.m */; };
+		C9EB550414A60B60003B4206 /* NSError-MJGAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54E214A60B60003B4206 /* NSError-MJGAlert.h */; };
+		C9EB550514A60B60003B4206 /* NSError-MJGAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB54E314A60B60003B4206 /* NSError-MJGAlert.m */; };
+		C9EB550614A60B60003B4206 /* NSNumber-MJGRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54E514A60B60003B4206 /* NSNumber-MJGRandom.h */; };
+		C9EB550714A60B60003B4206 /* NSNumber-MJGRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB54E614A60B60003B4206 /* NSNumber-MJGRandom.m */; };
+		C9EB550A14A60B60003B4206 /* NSString-MJGCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54EA14A60B60003B4206 /* NSString-MJGCrypto.h */; };
+		C9EB550B14A60B60003B4206 /* NSString-MJGCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB54EB14A60B60003B4206 /* NSString-MJGCrypto.m */; };
+		C9EB550C14A60B60003B4206 /* NSString-MJGURLEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54EC14A60B60003B4206 /* NSString-MJGURLEncode.h */; };
+		C9EB550D14A60B60003B4206 /* NSString-MJGURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB54ED14A60B60003B4206 /* NSString-MJGURLEncode.m */; };
+		C9EB550E14A60B60003B4206 /* UIButton-MJGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54EF14A60B60003B4206 /* UIButton-MJGAdditions.h */; };
+		C9EB550F14A60B60003B4206 /* UIButton-MJGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB54F014A60B60003B4206 /* UIButton-MJGAdditions.m */; };
+		C9EB551014A60B60003B4206 /* UIColor-MJGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54F214A60B60003B4206 /* UIColor-MJGAdditions.h */; };
+		C9EB551114A60B60003B4206 /* UIColor-MJGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB54F314A60B60003B4206 /* UIColor-MJGAdditions.m */; };
+		C9EB551214A60B60003B4206 /* UIImage-MJGScaling.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54F514A60B60003B4206 /* UIImage-MJGScaling.h */; };
+		C9EB551314A60B60003B4206 /* UIImage-MJGScaling.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB54F614A60B60003B4206 /* UIImage-MJGScaling.m */; };
+		C9EB551E14A6112D003B4206 /* MJGFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB551D14A6112C003B4206 /* MJGFoundation.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJGFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9EB54BF14A609CD003B4206 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9EB54D214A60A2D003B4206 /* MJGFoundation-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MJGFoundation-Prefix.pch"; path = "Source/MJGFoundation-Prefix.pch"; sourceTree = "<group>"; };
+		C9EB54D714A60B60003B4206 /* NSData-MJGZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-MJGZip.h"; sourceTree = "<group>"; };
+		C9EB54D814A60B60003B4206 /* NSData-MJGZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData-MJGZip.m"; sourceTree = "<group>"; };
+		C9EB54DA14A60B60003B4206 /* NSDate-MJGFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-MJGFormat.h"; sourceTree = "<group>"; };
+		C9EB54DB14A60B60003B4206 /* NSDate-MJGFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-MJGFormat.m"; sourceTree = "<group>"; };
+		C9EB54DF14A60B60003B4206 /* NSDictionary-MJGURLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-MJGURLEncode.h"; sourceTree = "<group>"; };
+		C9EB54E014A60B60003B4206 /* NSDictionary-MJGURLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary-MJGURLEncode.m"; sourceTree = "<group>"; };
+		C9EB54E214A60B60003B4206 /* NSError-MJGAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError-MJGAlert.h"; sourceTree = "<group>"; };
+		C9EB54E314A60B60003B4206 /* NSError-MJGAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError-MJGAlert.m"; sourceTree = "<group>"; };
+		C9EB54E514A60B60003B4206 /* NSNumber-MJGRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber-MJGRandom.h"; sourceTree = "<group>"; };
+		C9EB54E614A60B60003B4206 /* NSNumber-MJGRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber-MJGRandom.m"; sourceTree = "<group>"; };
+		C9EB54EA14A60B60003B4206 /* NSString-MJGCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-MJGCrypto.h"; sourceTree = "<group>"; };
+		C9EB54EB14A60B60003B4206 /* NSString-MJGCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-MJGCrypto.m"; sourceTree = "<group>"; };
+		C9EB54EC14A60B60003B4206 /* NSString-MJGURLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-MJGURLEncode.h"; sourceTree = "<group>"; };
+		C9EB54ED14A60B60003B4206 /* NSString-MJGURLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-MJGURLEncode.m"; sourceTree = "<group>"; };
+		C9EB54EF14A60B60003B4206 /* UIButton-MJGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton-MJGAdditions.h"; sourceTree = "<group>"; };
+		C9EB54F014A60B60003B4206 /* UIButton-MJGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton-MJGAdditions.m"; sourceTree = "<group>"; };
+		C9EB54F214A60B60003B4206 /* UIColor-MJGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-MJGAdditions.h"; sourceTree = "<group>"; };
+		C9EB54F314A60B60003B4206 /* UIColor-MJGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-MJGAdditions.m"; sourceTree = "<group>"; };
+		C9EB54F514A60B60003B4206 /* UIImage-MJGScaling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-MJGScaling.h"; sourceTree = "<group>"; };
+		C9EB54F614A60B60003B4206 /* UIImage-MJGScaling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-MJGScaling.m"; sourceTree = "<group>"; };
+		C9EB551D14A6112C003B4206 /* MJGFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGFoundation.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9EB54B914A609CD003B4206 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9EB54C014A609CD003B4206 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9EB54B114A609CD003B4206 = {
+			isa = PBXGroup;
+			children = (
+				C9EB54C114A609CD003B4206 /* MJGFoundation */,
+				C9EB54BE14A609CD003B4206 /* Frameworks */,
+				C9EB54BD14A609CD003B4206 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9EB54BD14A609CD003B4206 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9EB54BE14A609CD003B4206 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54BF14A609CD003B4206 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9EB54C114A609CD003B4206 /* MJGFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54D014A60A2D003B4206 /* Source */,
+				C9EB54C214A609CD003B4206 /* Supporting Files */,
+			);
+			path = MJGFoundation;
+			sourceTree = "<group>";
+		};
+		C9EB54C214A609CD003B4206 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54D214A60A2D003B4206 /* MJGFoundation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9EB54D014A60A2D003B4206 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54D114A60A2D003B4206 /* Categories */,
+				C9EB551D14A6112C003B4206 /* MJGFoundation.h */,
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		C9EB54D114A60A2D003B4206 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54D414A60B60003B4206 /* NSData */,
+				C9EB54D914A60B60003B4206 /* NSDate */,
+				C9EB54DC14A60B60003B4206 /* NSDictionary */,
+				C9EB54E114A60B60003B4206 /* NSError */,
+				C9EB54E414A60B60003B4206 /* NSNumber */,
+				C9EB54E714A60B60003B4206 /* NSString */,
+				C9EB54EE14A60B60003B4206 /* UIButton */,
+				C9EB54F114A60B60003B4206 /* UIColor */,
+				C9EB54F414A60B60003B4206 /* UIImage */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C9EB54D414A60B60003B4206 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54D714A60B60003B4206 /* NSData-MJGZip.h */,
+				C9EB54D814A60B60003B4206 /* NSData-MJGZip.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		C9EB54D914A60B60003B4206 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54DA14A60B60003B4206 /* NSDate-MJGFormat.h */,
+				C9EB54DB14A60B60003B4206 /* NSDate-MJGFormat.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		C9EB54DC14A60B60003B4206 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54DF14A60B60003B4206 /* NSDictionary-MJGURLEncode.h */,
+				C9EB54E014A60B60003B4206 /* NSDictionary-MJGURLEncode.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		C9EB54E114A60B60003B4206 /* NSError */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54E214A60B60003B4206 /* NSError-MJGAlert.h */,
+				C9EB54E314A60B60003B4206 /* NSError-MJGAlert.m */,
+			);
+			path = NSError;
+			sourceTree = "<group>";
+		};
+		C9EB54E414A60B60003B4206 /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54E514A60B60003B4206 /* NSNumber-MJGRandom.h */,
+				C9EB54E614A60B60003B4206 /* NSNumber-MJGRandom.m */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		C9EB54E714A60B60003B4206 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54EA14A60B60003B4206 /* NSString-MJGCrypto.h */,
+				C9EB54EB14A60B60003B4206 /* NSString-MJGCrypto.m */,
+				C9EB54EC14A60B60003B4206 /* NSString-MJGURLEncode.h */,
+				C9EB54ED14A60B60003B4206 /* NSString-MJGURLEncode.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		C9EB54EE14A60B60003B4206 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54EF14A60B60003B4206 /* UIButton-MJGAdditions.h */,
+				C9EB54F014A60B60003B4206 /* UIButton-MJGAdditions.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		C9EB54F114A60B60003B4206 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54F214A60B60003B4206 /* UIColor-MJGAdditions.h */,
+				C9EB54F314A60B60003B4206 /* UIColor-MJGAdditions.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		C9EB54F414A60B60003B4206 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB54F514A60B60003B4206 /* UIImage-MJGScaling.h */,
+				C9EB54F614A60B60003B4206 /* UIImage-MJGScaling.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9EB54BA14A609CD003B4206 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9EB54D314A60A2D003B4206 /* MJGFoundation-Prefix.pch in Headers */,
+				C9EB54FC14A60B60003B4206 /* NSData-MJGZip.h in Headers */,
+				C9EB54FE14A60B60003B4206 /* NSDate-MJGFormat.h in Headers */,
+				C9EB550214A60B60003B4206 /* NSDictionary-MJGURLEncode.h in Headers */,
+				C9EB550414A60B60003B4206 /* NSError-MJGAlert.h in Headers */,
+				C9EB550614A60B60003B4206 /* NSNumber-MJGRandom.h in Headers */,
+				C9EB550A14A60B60003B4206 /* NSString-MJGCrypto.h in Headers */,
+				C9EB550C14A60B60003B4206 /* NSString-MJGURLEncode.h in Headers */,
+				C9EB550E14A60B60003B4206 /* UIButton-MJGAdditions.h in Headers */,
+				C9EB551014A60B60003B4206 /* UIColor-MJGAdditions.h in Headers */,
+				C9EB551214A60B60003B4206 /* UIImage-MJGScaling.h in Headers */,
+				C9EB551E14A6112D003B4206 /* MJGFoundation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C9EB54BB14A609CD003B4206 /* MJGFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9EB54C914A609CD003B4206 /* Build configuration list for PBXNativeTarget "MJGFoundation" */;
+			buildPhases = (
+				C9EB54B814A609CD003B4206 /* Sources */,
+				C9EB54B914A609CD003B4206 /* Frameworks */,
+				C9EB54BA14A609CD003B4206 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJGFoundation;
+			productName = MJGFoundation;
+			productReference = C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9EB54B314A609CD003B4206 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C9EB54B614A609CD003B4206 /* Build configuration list for PBXProject "MJGFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9EB54B114A609CD003B4206;
+			productRefGroup = C9EB54BD14A609CD003B4206 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9EB54BB14A609CD003B4206 /* MJGFoundation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9EB54B814A609CD003B4206 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9EB54FD14A60B60003B4206 /* NSData-MJGZip.m in Sources */,
+				C9EB54FF14A60B60003B4206 /* NSDate-MJGFormat.m in Sources */,
+				C9EB550314A60B60003B4206 /* NSDictionary-MJGURLEncode.m in Sources */,
+				C9EB550514A60B60003B4206 /* NSError-MJGAlert.m in Sources */,
+				C9EB550714A60B60003B4206 /* NSNumber-MJGRandom.m in Sources */,
+				C9EB550B14A60B60003B4206 /* NSString-MJGCrypto.m in Sources */,
+				C9EB550D14A60B60003B4206 /* NSString-MJGURLEncode.m in Sources */,
+				C9EB550F14A60B60003B4206 /* UIButton-MJGAdditions.m in Sources */,
+				C9EB551114A60B60003B4206 /* UIColor-MJGAdditions.m in Sources */,
+				C9EB551314A60B60003B4206 /* UIImage-MJGScaling.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C9EB54C714A609CD003B4206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9EB54C814A609CD003B4206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9EB54CA14A609CD003B4206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MJGFoundation.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/MJGFoundation-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C9EB54CB14A609CD003B4206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MJGFoundation.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/MJGFoundation-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9EB54B614A609CD003B4206 /* Build configuration list for PBXProject "MJGFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9EB54C714A609CD003B4206 /* Debug */,
+				C9EB54C814A609CD003B4206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9EB54C914A609CD003B4206 /* Build configuration list for PBXNativeTarget "MJGFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9EB54CA14A609CD003B4206 /* Debug */,
+				C9EB54CB14A609CD003B4206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9EB54B314A609CD003B4206 /* Project object */;
+}
