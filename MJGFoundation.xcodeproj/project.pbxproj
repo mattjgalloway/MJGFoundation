@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91BFD5214B2FCF300F00F47 /* MJGRateView.h in Headers */ = {isa = PBXBuildFile; fileRef = C91BFD5014B2FCF300F00F47 /* MJGRateView.h */; };
+		C91BFD5314B2FCF300F00F47 /* MJGRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C91BFD5114B2FCF300F00F47 /* MJGRateView.m */; };
 		C9EB54C014A609CD003B4206 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BF14A609CD003B4206 /* Foundation.framework */; };
 		C9EB54D314A60A2D003B4206 /* MJGFoundation-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54D214A60A2D003B4206 /* MJGFoundation-Prefix.pch */; };
 		C9EB54FC14A60B60003B4206 /* NSData-MJGZip.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54D714A60B60003B4206 /* NSData-MJGZip.h */; };
@@ -33,6 +35,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C91BFD5014B2FCF300F00F47 /* MJGRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRateView.h; sourceTree = "<group>"; };
+		C91BFD5114B2FCF300F00F47 /* MJGRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRateView.m; sourceTree = "<group>"; };
+		C91BFD5714B2FECA00F00F47 /* star_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_off.png; sourceTree = "<group>"; };
+		C91BFD5814B2FECA00F00F47 /* star_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_off@2x.png"; sourceTree = "<group>"; };
+		C91BFD5914B2FECA00F00F47 /* star_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_on.png; sourceTree = "<group>"; };
+		C91BFD5A14B2FECA00F00F47 /* star_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_on@2x.png"; sourceTree = "<group>"; };
 		C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJGFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EB54BF14A609CD003B4206 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9EB54D214A60A2D003B4206 /* MJGFoundation-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MJGFoundation-Prefix.pch"; path = "Source/MJGFoundation-Prefix.pch"; sourceTree = "<group>"; };
@@ -71,6 +79,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C91BFD4F14B2FCF300F00F47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C91BFD5014B2FCF300F00F47 /* MJGRateView.h */,
+				C91BFD5114B2FCF300F00F47 /* MJGRateView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C91BFD5514B2FECA00F00F47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C91BFD5614B2FECA00F00F47 /* MJGRateView */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		C91BFD5614B2FECA00F00F47 /* MJGRateView */ = {
+			isa = PBXGroup;
+			children = (
+				C91BFD5714B2FECA00F00F47 /* star_off.png */,
+				C91BFD5814B2FECA00F00F47 /* star_off@2x.png */,
+				C91BFD5914B2FECA00F00F47 /* star_on.png */,
+				C91BFD5A14B2FECA00F00F47 /* star_on@2x.png */,
+			);
+			path = MJGRateView;
+			sourceTree = "<group>";
+		};
 		C9EB54B114A609CD003B4206 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				C9EB54D014A60A2D003B4206 /* Source */,
+				C91BFD5514B2FECA00F00F47 /* Resources */,
 				C9EB54C214A609CD003B4206 /* Supporting Files */,
 			);
 			path = MJGFoundation;
@@ -117,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				C9EB54D114A60A2D003B4206 /* Categories */,
+				C91BFD4F14B2FCF300F00F47 /* View */,
 				C9EB551D14A6112C003B4206 /* MJGFoundation.h */,
 			);
 			path = Source;
@@ -240,6 +278,7 @@
 				C9EB551014A60B60003B4206 /* UIColor-MJGAdditions.h in Headers */,
 				C9EB551214A60B60003B4206 /* UIImage-MJGScaling.h in Headers */,
 				C9EB551E14A6112D003B4206 /* MJGFoundation.h in Headers */,
+				C91BFD5214B2FCF300F00F47 /* MJGRateView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +342,7 @@
 				C9EB550F14A60B60003B4206 /* UIButton-MJGAdditions.m in Sources */,
 				C9EB551114A60B60003B4206 /* UIColor-MJGAdditions.m in Sources */,
 				C9EB551314A60B60003B4206 /* UIImage-MJGScaling.m in Sources */,
+				C91BFD5314B2FCF300F00F47 /* MJGRateView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,7 @@
 //  Copyright (c) 2011 Matt Galloway. All rights reserved.
 //
 
+// Categories
 #import "NSData-MJGZip.h"
 
 #import "NSDate-MJGFormat.h"
@@ -24,3 +25,6 @@
 #import "UIColor-MJGAdditions.h"
 
 #import "UIImage-MJGScaling.h"
+
+// Views
+#import "MJGRateView.h"
