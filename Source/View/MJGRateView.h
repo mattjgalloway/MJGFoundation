@@ -15,8 +15,7 @@
 - (void)rateView:(MJGRateView*)rateView changedValueTo:(CGFloat)newValue;
 @end
 
-@interface MJGRateView : UIView {
-}
+@interface MJGRateView : UIView
 
 @property (nonatomic, unsafe_unretained) NSInteger max;
 @property (nonatomic, unsafe_unretained) CGFloat value;
