@@ -7,8 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C901CAB914B7844A00C3FD84 /* MJGChoiceViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C901CAB114B7844A00C3FD84 /* MJGChoiceViewController.h */; };
+		C901CABA14B7844A00C3FD84 /* MJGChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CAB214B7844A00C3FD84 /* MJGChoiceViewController.m */; };
+		C901CABB14B7844A00C3FD84 /* MJGFullscreenImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C901CAB314B7844A00C3FD84 /* MJGFullscreenImageViewController.h */; };
+		C901CABC14B7844A00C3FD84 /* MJGFullscreenImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CAB414B7844A00C3FD84 /* MJGFullscreenImageViewController.m */; };
+		C901CABD14B7844A00C3FD84 /* MJGFullscreenWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C901CAB514B7844A00C3FD84 /* MJGFullscreenWebViewController.h */; };
+		C901CABE14B7844A00C3FD84 /* MJGFullscreenWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CAB614B7844A00C3FD84 /* MJGFullscreenWebViewController.m */; };
+		C901CABF14B7844A00C3FD84 /* MJGImageGalleryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C901CAB714B7844A00C3FD84 /* MJGImageGalleryViewController.h */; };
+		C901CAC014B7844A00C3FD84 /* MJGImageGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CAB814B7844A00C3FD84 /* MJGImageGalleryViewController.m */; };
+		C901CAFC14B7921200C3FD84 /* MJGLoadableImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = C901CAFA14B7921200C3FD84 /* MJGLoadableImageView.h */; };
+		C901CAFD14B7921200C3FD84 /* MJGLoadableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CAFB14B7921200C3FD84 /* MJGLoadableImageView.m */; };
+		C901CB2914B7A86E00C3FD84 /* MJGImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = C901CB2714B7A86E00C3FD84 /* MJGImageLoader.h */; };
+		C901CB2A14B7A86E00C3FD84 /* MJGImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CB2814B7A86E00C3FD84 /* MJGImageLoader.m */; };
+		C901CB2D14B7B3A500C3FD84 /* MJGStack.h in Headers */ = {isa = PBXBuildFile; fileRef = C901CB2B14B7B3A500C3FD84 /* MJGStack.h */; };
+		C901CB2E14B7B3A500C3FD84 /* MJGStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CB2C14B7B3A500C3FD84 /* MJGStack.m */; };
+		C909420514B84B8900BE443A /* MJGRPNCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = C909420314B84B8900BE443A /* MJGRPNCalculator.h */; };
+		C909420614B84B8900BE443A /* MJGRPNCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C909420414B84B8900BE443A /* MJGRPNCalculator.m */; };
+		C909420F14B85CA200BE443A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C909420E14B85CA200BE443A /* SenTestingKit.framework */; };
+		C909421114B85CA200BE443A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C909421014B85CA200BE443A /* UIKit.framework */; };
+		C909421214B85CA200BE443A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BF14A609CD003B4206 /* Foundation.framework */; };
+		C909422014B85F4000BE443A /* libMJGFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */; };
+		C909422714B864A800BE443A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C909421014B85CA200BE443A /* UIKit.framework */; };
+		C909422814B864A800BE443A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BF14A609CD003B4206 /* Foundation.framework */; };
+		C909422A14B864A800BE443A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C909422914B864A800BE443A /* CoreGraphics.framework */; };
+		C909423214B864A800BE443A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C909423114B864A800BE443A /* main.m */; };
+		C909424C14B868C800BE443A /* libMJGFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */; };
 		C91BFD5214B2FCF300F00F47 /* MJGRateView.h in Headers */ = {isa = PBXBuildFile; fileRef = C91BFD5014B2FCF300F00F47 /* MJGRateView.h */; };
 		C91BFD5314B2FCF300F00F47 /* MJGRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C91BFD5114B2FCF300F00F47 /* MJGRateView.m */; };
+		C95235B314B86E3000B880D3 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C95235AE14B86E3000B880D3 /* AppDelegate.h */; };
+		C95235B614B86E3000B880D3 /* MainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C95235B114B86E3000B880D3 /* MainViewController.h */; };
+		C95235B914B86E7300B880D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C95235AF14B86E3000B880D3 /* AppDelegate.m */; };
+		C95235BA14B86E7300B880D3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95235B214B86E3000B880D3 /* MainViewController.m */; };
+		C95235BB14B86E7F00B880D3 /* MainViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95235AB14B86E3000B880D3 /* MainViewController~ipad.xib */; };
+		C95235BC14B86E7F00B880D3 /* MainViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95235AC14B86E3000B880D3 /* MainViewController~iphone.xib */; };
+		C95235C014B86E9E00B880D3 /* MJGRPNCalculatorTests.h in Headers */ = {isa = PBXBuildFile; fileRef = C95235BE14B86E9E00B880D3 /* MJGRPNCalculatorTests.h */; };
+		C95235C214B86EAF00B880D3 /* MJGRPNCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C95235BF14B86E9E00B880D3 /* MJGRPNCalculatorTests.m */; };
 		C9EB54C014A609CD003B4206 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BF14A609CD003B4206 /* Foundation.framework */; };
 		C9EB54D314A60A2D003B4206 /* MJGFoundation-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54D214A60A2D003B4206 /* MJGFoundation-Prefix.pch */; };
 		C9EB54FC14A60B60003B4206 /* NSData-MJGZip.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54D714A60B60003B4206 /* NSData-MJGZip.h */; };
@@ -35,12 +68,46 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C901CAB114B7844A00C3FD84 /* MJGChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGChoiceViewController.h; sourceTree = "<group>"; };
+		C901CAB214B7844A00C3FD84 /* MJGChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGChoiceViewController.m; sourceTree = "<group>"; };
+		C901CAB314B7844A00C3FD84 /* MJGFullscreenImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGFullscreenImageViewController.h; sourceTree = "<group>"; };
+		C901CAB414B7844A00C3FD84 /* MJGFullscreenImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGFullscreenImageViewController.m; sourceTree = "<group>"; };
+		C901CAB514B7844A00C3FD84 /* MJGFullscreenWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGFullscreenWebViewController.h; sourceTree = "<group>"; };
+		C901CAB614B7844A00C3FD84 /* MJGFullscreenWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGFullscreenWebViewController.m; sourceTree = "<group>"; };
+		C901CAB714B7844A00C3FD84 /* MJGImageGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGImageGalleryViewController.h; sourceTree = "<group>"; };
+		C901CAB814B7844A00C3FD84 /* MJGImageGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGImageGalleryViewController.m; sourceTree = "<group>"; };
+		C901CAFA14B7921200C3FD84 /* MJGLoadableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLoadableImageView.h; sourceTree = "<group>"; };
+		C901CAFB14B7921200C3FD84 /* MJGLoadableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLoadableImageView.m; sourceTree = "<group>"; };
+		C901CB2714B7A86E00C3FD84 /* MJGImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGImageLoader.h; sourceTree = "<group>"; };
+		C901CB2814B7A86E00C3FD84 /* MJGImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGImageLoader.m; sourceTree = "<group>"; };
+		C901CB2B14B7B3A500C3FD84 /* MJGStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGStack.h; sourceTree = "<group>"; };
+		C901CB2C14B7B3A500C3FD84 /* MJGStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGStack.m; sourceTree = "<group>"; };
+		C909420314B84B8900BE443A /* MJGRPNCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRPNCalculator.h; sourceTree = "<group>"; };
+		C909420414B84B8900BE443A /* MJGRPNCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRPNCalculator.m; sourceTree = "<group>"; };
+		C909420D14B85CA200BE443A /* MJGRPNCalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJGRPNCalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C909420E14B85CA200BE443A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = ../../../../iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = SDKROOT; };
+		C909421014B85CA200BE443A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C909421514B85CA200BE443A /* MJGRPNCalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MJGRPNCalculatorTests-Info.plist"; sourceTree = "<group>"; };
+		C909421C14B85CA300BE443A /* MJGRPNCalculatorTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJGRPNCalculatorTests-Prefix.pch"; sourceTree = "<group>"; };
+		C909422514B864A800BE443A /* MJGFoundationUICatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJGFoundationUICatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C909422914B864A800BE443A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C909422D14B864A800BE443A /* MJGFoundationUICatalog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MJGFoundationUICatalog-Info.plist"; sourceTree = "<group>"; };
+		C909423114B864A800BE443A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C909423314B864A800BE443A /* MJGFoundationUICatalog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJGFoundationUICatalog-Prefix.pch"; sourceTree = "<group>"; };
 		C91BFD5014B2FCF300F00F47 /* MJGRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRateView.h; sourceTree = "<group>"; };
 		C91BFD5114B2FCF300F00F47 /* MJGRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRateView.m; sourceTree = "<group>"; };
 		C91BFD5714B2FECA00F00F47 /* star_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_off.png; sourceTree = "<group>"; };
 		C91BFD5814B2FECA00F00F47 /* star_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_off@2x.png"; sourceTree = "<group>"; };
 		C91BFD5914B2FECA00F00F47 /* star_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_on.png; sourceTree = "<group>"; };
 		C91BFD5A14B2FECA00F00F47 /* star_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_on@2x.png"; sourceTree = "<group>"; };
+		C95235AB14B86E3000B880D3 /* MainViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainViewController~ipad.xib"; sourceTree = "<group>"; };
+		C95235AC14B86E3000B880D3 /* MainViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainViewController~iphone.xib"; sourceTree = "<group>"; };
+		C95235AE14B86E3000B880D3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C95235AF14B86E3000B880D3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C95235B114B86E3000B880D3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C95235B214B86E3000B880D3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C95235BE14B86E9E00B880D3 /* MJGRPNCalculatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRPNCalculatorTests.h; sourceTree = "<group>"; };
+		C95235BF14B86E9E00B880D3 /* MJGRPNCalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRPNCalculatorTests.m; sourceTree = "<group>"; };
 		C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJGFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EB54BF14A609CD003B4206 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9EB54D214A60A2D003B4206 /* MJGFoundation-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MJGFoundation-Prefix.pch"; path = "Source/MJGFoundation-Prefix.pch"; sourceTree = "<group>"; };
@@ -68,6 +135,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C909420914B85CA200BE443A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C909421214B85CA200BE443A /* Foundation.framework in Frameworks */,
+				C909420F14B85CA200BE443A /* SenTestingKit.framework in Frameworks */,
+				C909421114B85CA200BE443A /* UIKit.framework in Frameworks */,
+				C909422014B85F4000BE443A /* libMJGFoundation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C909422214B864A800BE443A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C909422714B864A800BE443A /* UIKit.framework in Frameworks */,
+				C909422814B864A800BE443A /* Foundation.framework in Frameworks */,
+				C909422A14B864A800BE443A /* CoreGraphics.framework in Frameworks */,
+				C909424C14B868C800BE443A /* libMJGFoundation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9EB54B914A609CD003B4206 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,9 +168,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C901CAB014B7844A00C3FD84 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C901CAB114B7844A00C3FD84 /* MJGChoiceViewController.h */,
+				C901CAB214B7844A00C3FD84 /* MJGChoiceViewController.m */,
+				C901CAB314B7844A00C3FD84 /* MJGFullscreenImageViewController.h */,
+				C901CAB414B7844A00C3FD84 /* MJGFullscreenImageViewController.m */,
+				C901CAB514B7844A00C3FD84 /* MJGFullscreenWebViewController.h */,
+				C901CAB614B7844A00C3FD84 /* MJGFullscreenWebViewController.m */,
+				C901CAB714B7844A00C3FD84 /* MJGImageGalleryViewController.h */,
+				C901CAB814B7844A00C3FD84 /* MJGImageGalleryViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C901CB2514B7A86D00C3FD84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C901CB2B14B7B3A500C3FD84 /* MJGStack.h */,
+				C901CB2C14B7B3A500C3FD84 /* MJGStack.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C901CB2614B7A86D00C3FD84 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C901CB2714B7A86E00C3FD84 /* MJGImageLoader.h */,
+				C901CB2814B7A86E00C3FD84 /* MJGImageLoader.m */,
+				C909420314B84B8900BE443A /* MJGRPNCalculator.h */,
+				C909420414B84B8900BE443A /* MJGRPNCalculator.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C909421314B85CA200BE443A /* MJGRPNCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				C95235BD14B86E9E00B880D3 /* Source */,
+				C909421414B85CA200BE443A /* Supporting Files */,
+			);
+			path = MJGRPNCalculatorTests;
+			sourceTree = "<group>";
+		};
+		C909421414B85CA200BE443A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C909421514B85CA200BE443A /* MJGRPNCalculatorTests-Info.plist */,
+				C909421C14B85CA300BE443A /* MJGRPNCalculatorTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C909422B14B864A800BE443A /* MJGFoundationUICatalog */ = {
+			isa = PBXGroup;
+			children = (
+				C95235AD14B86E3000B880D3 /* Source */,
+				C95235AA14B86E3000B880D3 /* Resources */,
+				C909422C14B864A800BE443A /* Supporting Files */,
+			);
+			path = MJGFoundationUICatalog;
+			sourceTree = "<group>";
+		};
+		C909422C14B864A800BE443A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C909422D14B864A800BE443A /* MJGFoundationUICatalog-Info.plist */,
+				C909423114B864A800BE443A /* main.m */,
+				C909423314B864A800BE443A /* MJGFoundationUICatalog-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C91BFD4F14B2FCF300F00F47 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C901CAFA14B7921200C3FD84 /* MJGLoadableImageView.h */,
+				C901CAFB14B7921200C3FD84 /* MJGLoadableImageView.m */,
 				C91BFD5014B2FCF300F00F47 /* MJGRateView.h */,
 				C91BFD5114B2FCF300F00F47 /* MJGRateView.m */,
 			);
@@ -107,10 +271,41 @@
 			path = MJGRateView;
 			sourceTree = "<group>";
 		};
+		C95235AA14B86E3000B880D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C95235AB14B86E3000B880D3 /* MainViewController~ipad.xib */,
+				C95235AC14B86E3000B880D3 /* MainViewController~iphone.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C95235AD14B86E3000B880D3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C95235AE14B86E3000B880D3 /* AppDelegate.h */,
+				C95235AF14B86E3000B880D3 /* AppDelegate.m */,
+				C95235B114B86E3000B880D3 /* MainViewController.h */,
+				C95235B214B86E3000B880D3 /* MainViewController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C95235BD14B86E9E00B880D3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C95235BE14B86E9E00B880D3 /* MJGRPNCalculatorTests.h */,
+				C95235BF14B86E9E00B880D3 /* MJGRPNCalculatorTests.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		C9EB54B114A609CD003B4206 = {
 			isa = PBXGroup;
 			children = (
 				C9EB54C114A609CD003B4206 /* MJGFoundation */,
+				C909421314B85CA200BE443A /* MJGRPNCalculatorTests */,
+				C909422B14B864A800BE443A /* MJGFoundationUICatalog */,
 				C9EB54BE14A609CD003B4206 /* Frameworks */,
 				C9EB54BD14A609CD003B4206 /* Products */,
 			);
@@ -120,6 +315,8 @@
 			isa = PBXGroup;
 			children = (
 				C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */,
+				C909420D14B85CA200BE443A /* MJGRPNCalculatorTests.octest */,
+				C909422514B864A800BE443A /* MJGFoundationUICatalog.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +325,9 @@
 			isa = PBXGroup;
 			children = (
 				C9EB54BF14A609CD003B4206 /* Foundation.framework */,
+				C909420E14B85CA200BE443A /* SenTestingKit.framework */,
+				C909421014B85CA200BE443A /* UIKit.framework */,
+				C909422914B864A800BE443A /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +354,9 @@
 			isa = PBXGroup;
 			children = (
 				C9EB54D114A60A2D003B4206 /* Categories */,
+				C901CAB014B7844A00C3FD84 /* Controller */,
+				C901CB2514B7A86D00C3FD84 /* Model */,
+				C901CB2614B7A86D00C3FD84 /* Utilities */,
 				C91BFD4F14B2FCF300F00F47 /* View */,
 				C9EB551D14A6112C003B4206 /* MJGFoundation.h */,
 			);
@@ -279,12 +482,58 @@
 				C9EB551214A60B60003B4206 /* UIImage-MJGScaling.h in Headers */,
 				C9EB551E14A6112D003B4206 /* MJGFoundation.h in Headers */,
 				C91BFD5214B2FCF300F00F47 /* MJGRateView.h in Headers */,
+				C901CAB914B7844A00C3FD84 /* MJGChoiceViewController.h in Headers */,
+				C901CABB14B7844A00C3FD84 /* MJGFullscreenImageViewController.h in Headers */,
+				C901CABD14B7844A00C3FD84 /* MJGFullscreenWebViewController.h in Headers */,
+				C901CABF14B7844A00C3FD84 /* MJGImageGalleryViewController.h in Headers */,
+				C901CAFC14B7921200C3FD84 /* MJGLoadableImageView.h in Headers */,
+				C901CB2914B7A86E00C3FD84 /* MJGImageLoader.h in Headers */,
+				C901CB2D14B7B3A500C3FD84 /* MJGStack.h in Headers */,
+				C909420514B84B8900BE443A /* MJGRPNCalculator.h in Headers */,
+				C95235B314B86E3000B880D3 /* AppDelegate.h in Headers */,
+				C95235B614B86E3000B880D3 /* MainViewController.h in Headers */,
+				C95235C014B86E9E00B880D3 /* MJGRPNCalculatorTests.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C909420C14B85CA200BE443A /* MJGRPNCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C909421D14B85CA300BE443A /* Build configuration list for PBXNativeTarget "MJGRPNCalculatorTests" */;
+			buildPhases = (
+				C909420814B85CA200BE443A /* Sources */,
+				C909420914B85CA200BE443A /* Frameworks */,
+				C909420A14B85CA200BE443A /* Resources */,
+				C909420B14B85CA200BE443A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJGRPNCalculatorTests;
+			productName = MJGRPNCalculatorTests;
+			productReference = C909420D14B85CA200BE443A /* MJGRPNCalculatorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C909422414B864A800BE443A /* MJGFoundationUICatalog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C909424914B864A900BE443A /* Build configuration list for PBXNativeTarget "MJGFoundationUICatalog" */;
+			buildPhases = (
+				C909422114B864A800BE443A /* Sources */,
+				C909422214B864A800BE443A /* Frameworks */,
+				C909422314B864A800BE443A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJGFoundationUICatalog;
+			productName = MJGFoundationUICatalog;
+			productReference = C909422514B864A800BE443A /* MJGFoundationUICatalog.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C9EB54BB14A609CD003B4206 /* MJGFoundation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9EB54C914A609CD003B4206 /* Build configuration list for PBXNativeTarget "MJGFoundation" */;
@@ -323,11 +572,66 @@
 			projectRoot = "";
 			targets = (
 				C9EB54BB14A609CD003B4206 /* MJGFoundation */,
+				C909420C14B85CA200BE443A /* MJGRPNCalculatorTests */,
+				C909422414B864A800BE443A /* MJGFoundationUICatalog */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		C909420A14B85CA200BE443A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C909422314B864A800BE443A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95235BB14B86E7F00B880D3 /* MainViewController~ipad.xib in Resources */,
+				C95235BC14B86E7F00B880D3 /* MainViewController~iphone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C909420B14B85CA200BE443A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		C909420814B85CA200BE443A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95235C214B86EAF00B880D3 /* MJGRPNCalculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C909422114B864A800BE443A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C909423214B864A800BE443A /* main.m in Sources */,
+				C95235B914B86E7300B880D3 /* AppDelegate.m in Sources */,
+				C95235BA14B86E7300B880D3 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9EB54B814A609CD003B4206 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,12 +647,79 @@
 				C9EB551114A60B60003B4206 /* UIColor-MJGAdditions.m in Sources */,
 				C9EB551314A60B60003B4206 /* UIImage-MJGScaling.m in Sources */,
 				C91BFD5314B2FCF300F00F47 /* MJGRateView.m in Sources */,
+				C901CABA14B7844A00C3FD84 /* MJGChoiceViewController.m in Sources */,
+				C901CABC14B7844A00C3FD84 /* MJGFullscreenImageViewController.m in Sources */,
+				C901CABE14B7844A00C3FD84 /* MJGFullscreenWebViewController.m in Sources */,
+				C901CAC014B7844A00C3FD84 /* MJGImageGalleryViewController.m in Sources */,
+				C901CAFD14B7921200C3FD84 /* MJGLoadableImageView.m in Sources */,
+				C901CB2A14B7A86E00C3FD84 /* MJGImageLoader.m in Sources */,
+				C901CB2E14B7B3A500C3FD84 /* MJGStack.m in Sources */,
+				C909420614B84B8900BE443A /* MJGRPNCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		C909421E14B85CA300BE443A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MJGRPNCalculatorTests/MJGRPNCalculatorTests-Prefix.pch";
+				INFOPLIST_FILE = "MJGRPNCalculatorTests/MJGRPNCalculatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C909421F14B85CA300BE443A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MJGRPNCalculatorTests/MJGRPNCalculatorTests-Prefix.pch";
+				INFOPLIST_FILE = "MJGRPNCalculatorTests/MJGRPNCalculatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		C909424A14B864A900BE443A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MJGFoundationUICatalog/MJGFoundationUICatalog-Prefix.pch";
+				INFOPLIST_FILE = "MJGFoundationUICatalog/MJGFoundationUICatalog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C909424B14B864A900BE443A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MJGFoundationUICatalog/MJGFoundationUICatalog-Prefix.pch";
+				INFOPLIST_FILE = "MJGFoundationUICatalog/MJGFoundationUICatalog-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		C9EB54C714A609CD003B4206 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -418,6 +789,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C909421D14B85CA300BE443A /* Build configuration list for PBXNativeTarget "MJGRPNCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C909421E14B85CA300BE443A /* Debug */,
+				C909421F14B85CA300BE443A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C909424914B864A900BE443A /* Build configuration list for PBXNativeTarget "MJGFoundationUICatalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C909424A14B864A900BE443A /* Debug */,
+				C909424B14B864A900BE443A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C9EB54B614A609CD003B4206 /* Build configuration list for PBXProject "MJGFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
