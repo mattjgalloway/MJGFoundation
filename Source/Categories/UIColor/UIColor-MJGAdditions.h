@@ -10,6 +10,8 @@
 
 @interface UIColor (MJGAdditions)
 
++ (UIColor*)colorWithHexValue:(NSString*)hex;
+
 - (UIColor*)blackOrWhiteContrastingColor;
 - (float)luminosityDifference:(UIColor*)otherColor;
 
