@@ -42,6 +42,7 @@
 		C95235BC14B86E7F00B880D3 /* MainViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95235AC14B86E3000B880D3 /* MainViewController~iphone.xib */; };
 		C95235C014B86E9E00B880D3 /* MJGRPNCalculatorTests.h in Headers */ = {isa = PBXBuildFile; fileRef = C95235BE14B86E9E00B880D3 /* MJGRPNCalculatorTests.h */; };
 		C95235C214B86EAF00B880D3 /* MJGRPNCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C95235BF14B86E9E00B880D3 /* MJGRPNCalculatorTests.m */; };
+		C9D0256414C75F5700D494C1 /* MJGAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D0256314C75F5700D494C1 /* MJGAvailability.h */; };
 		C9EB54C014A609CD003B4206 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BF14A609CD003B4206 /* Foundation.framework */; };
 		C9EB54D314A60A2D003B4206 /* MJGFoundation-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54D214A60A2D003B4206 /* MJGFoundation-Prefix.pch */; };
 		C9EB54FC14A60B60003B4206 /* NSData-MJGZip.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54D714A60B60003B4206 /* NSData-MJGZip.h */; };
@@ -108,6 +109,7 @@
 		C95235B214B86E3000B880D3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C95235BE14B86E9E00B880D3 /* MJGRPNCalculatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRPNCalculatorTests.h; sourceTree = "<group>"; };
 		C95235BF14B86E9E00B880D3 /* MJGRPNCalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRPNCalculatorTests.m; sourceTree = "<group>"; };
+		C9D0256314C75F5700D494C1 /* MJGAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGAvailability.h; sourceTree = "<group>"; };
 		C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJGFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EB54BF14A609CD003B4206 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9EB54D214A60A2D003B4206 /* MJGFoundation-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MJGFoundation-Prefix.pch"; path = "Source/MJGFoundation-Prefix.pch"; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		C901CB2614B7A86D00C3FD84 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C9D0256314C75F5700D494C1 /* MJGAvailability.h */,
 				C901CB2714B7A86E00C3FD84 /* MJGImageLoader.h */,
 				C901CB2814B7A86E00C3FD84 /* MJGImageLoader.m */,
 				C909420314B84B8900BE443A /* MJGRPNCalculator.h */,
@@ -493,6 +496,7 @@
 				C95235B314B86E3000B880D3 /* AppDelegate.h in Headers */,
 				C95235B614B86E3000B880D3 /* MainViewController.h in Headers */,
 				C95235C014B86E9E00B880D3 /* MJGRPNCalculatorTests.h in Headers */,
+				C9D0256414C75F5700D494C1 /* MJGAvailability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
