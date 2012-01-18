@@ -26,6 +26,10 @@
 
 #ifdef __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED
 
+    #if __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED < __IPHONE_OS_VERSION_MIN_REQUIRED
+        #error You cannot ask for a soft max version which is less than the deployment target
+    #endif
+
     #if __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED < __IPHONE_2_0
         #undef __AVAILABILITY_INTERNAL__IPHONE_2_0
         #define __AVAILABILITY_INTERNAL__IPHONE_2_0 __AVAILABILITY_TOO_NEW
