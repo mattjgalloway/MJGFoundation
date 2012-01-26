@@ -6,7 +6,7 @@ MJGFoundation is a set of classes and categories for iOS.
 
 ## License
 
-MJGHTTPRequest uses the 2-clause BSD license. So you should be free to use it pretty much however 
+MJGFoundation uses the 2-clause BSD license. So you should be free to use it pretty much however 
 you want. Contact me if you require further information.
 
 Copyright (c) 2011 Matt Galloway. All rights reserved.
