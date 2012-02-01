@@ -8,7 +8,7 @@
 
 #import "UIImage-MJGScaling.h"
 
-@implementation UIImage (BeerMap)
+@implementation UIImage (MJGScaling)
 
 + (UIImage*)imageWithImage:(UIImage*)image scaledToSize:(CGSize)newSize {
     UIGraphicsBeginImageContext(newSize);
