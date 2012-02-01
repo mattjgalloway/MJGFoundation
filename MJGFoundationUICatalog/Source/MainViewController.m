@@ -13,6 +13,8 @@
 #import "MJGFullscreenWebViewController.h"
 #import "MJGImageGalleryViewController.h"
 
+#import "Example2DPinchGestureRecognizerViewController.h"
+
 @interface MainViewController () <MJGChoiceViewControllerDelegate, MJGFullscreenWebViewControllerDelegate>
 @end
 
@@ -57,11 +59,29 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    switch (section) {
+        case 0:
+            return 4; break;
+        case 1:
+            return 1; break;
+        default:
+            return 0; break;
+    }
+}
+
+- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    switch (section) {
+        case 0:
+            return @"View controllers"; break;
+        case 1:
+            return @"Gesture recognizers"; break;
+        default:
+            return nil; break;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -87,6 +107,10 @@
             cell.textLabel.text = @"Fullscreen Web";
         } else if (row == 3) {
             cell.textLabel.text = @"Image Gallery";
+        }
+    } else if (section == 1) {
+        if (row == 0) {
+            cell.textLabel.text = @"2D Pinch Gesture";
         }
     }
     
@@ -120,6 +144,11 @@
             vcToModal = vc;
         } else if (row == 3) {
             MJGImageGalleryViewController *vc = [[MJGImageGalleryViewController alloc] initWithImages:nil];
+            vcToPush = vc;
+        }
+    } else if (section == 1) {
+        if (row == 0) {
+            Example2DPinchGestureRecognizerViewController *vc = [[Example2DPinchGestureRecognizerViewController alloc] init];
             vcToPush = vc;
         }
     }

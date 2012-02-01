@@ -45,6 +45,8 @@
 		C9D0256414C75F5700D494C1 /* MJGAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D0256314C75F5700D494C1 /* MJGAvailability.h */; };
 		C9D7F05614D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D7F05414D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h */; };
 		C9D7F05714D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D7F05514D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m */; };
+		C9D7F05B14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D7F05914D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.h */; };
+		C9D7F05C14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D7F05A14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.m */; };
 		C9EB54C014A609CD003B4206 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BF14A609CD003B4206 /* Foundation.framework */; };
 		C9EB54D314A60A2D003B4206 /* MJGFoundation-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54D214A60A2D003B4206 /* MJGFoundation-Prefix.pch */; };
 		C9EB54FC14A60B60003B4206 /* NSData-MJGZip.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EB54D714A60B60003B4206 /* NSData-MJGZip.h */; };
@@ -114,6 +116,8 @@
 		C9D0256314C75F5700D494C1 /* MJGAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGAvailability.h; sourceTree = "<group>"; };
 		C9D7F05414D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJG2DPinchGestureRecognizer.h; sourceTree = "<group>"; };
 		C9D7F05514D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJG2DPinchGestureRecognizer.m; sourceTree = "<group>"; };
+		C9D7F05914D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example2DPinchGestureRecognizerViewController.h; sourceTree = "<group>"; };
+		C9D7F05A14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example2DPinchGestureRecognizerViewController.m; sourceTree = "<group>"; };
 		C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJGFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EB54BF14A609CD003B4206 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9EB54D214A60A2D003B4206 /* MJGFoundation-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MJGFoundation-Prefix.pch"; path = "Source/MJGFoundation-Prefix.pch"; sourceTree = "<group>"; };
@@ -296,6 +300,8 @@
 				C95235AF14B86E3000B880D3 /* AppDelegate.m */,
 				C95235B114B86E3000B880D3 /* MainViewController.h */,
 				C95235B214B86E3000B880D3 /* MainViewController.m */,
+				C9D7F05914D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.h */,
+				C9D7F05A14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -504,6 +510,7 @@
 				C95235C014B86E9E00B880D3 /* MJGRPNCalculatorTests.h in Headers */,
 				C9D0256414C75F5700D494C1 /* MJGAvailability.h in Headers */,
 				C9D7F05614D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h in Headers */,
+				C9D7F05B14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +674,7 @@
 				C901CB2E14B7B3A500C3FD84 /* MJGStack.m in Sources */,
 				C909420614B84B8900BE443A /* MJGRPNCalculator.m in Sources */,
 				C9D7F05714D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m in Sources */,
+				C9D7F05C14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
