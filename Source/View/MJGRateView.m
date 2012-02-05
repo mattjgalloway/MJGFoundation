@@ -28,7 +28,7 @@
 
 @implementation MJGRateView
 
-@synthesize max, value, allowHalf, delegate;
+@synthesize max, value, allowHalf;
 @synthesize onImage, halfImage, offImage;
 
 #pragma mark - Custom Accessors
@@ -201,10 +201,6 @@
     
     value = newValue;
     [self setNeedsDisplay];
-    
-    if ([delegate respondsToSelector:@selector(rateView:changedValueTo:)]) {
-        [delegate rateView:self changedValueTo:newValue];
-    }
 }
 
 - (BOOL)beginTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event {
