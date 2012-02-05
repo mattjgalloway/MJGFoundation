@@ -44,6 +44,7 @@
 - (void)setValue:(CGFloat)inValue {
     value = inValue;
     [self setNeedsDisplay];
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 - (void)setOnImage:(UIImage*)inOnImage offImage:(UIImage*)inOffImage {
@@ -198,10 +199,7 @@
     if (value == newValue) {
         return;
     }
-    
-    value = newValue;
-    [self setNeedsDisplay];
-    [self sendActionsForControlEvents:UIControlEventValueChanged];
+    self.value = newValue;
 }
 
 - (BOOL)beginTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event {
