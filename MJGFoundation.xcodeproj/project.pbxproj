@@ -44,14 +44,21 @@
 		C95235C214B86EAF00B880D3 /* MJGRPNCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C95235BF14B86E9E00B880D3 /* MJGRPNCalculatorTests.m */; };
 		C974E3B014DC5B2500B98A7C /* MJGObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C974E3AE14DC5B2500B98A7C /* MJGObjectCache.h */; };
 		C974E3B114DC5B2500B98A7C /* MJGObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C974E3AF14DC5B2500B98A7C /* MJGObjectCache.m */; };
-		C974E3B514DC5B5C00B98A7C /* MJGCacheEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = C974E3B314DC5B5C00B98A7C /* MJGCacheEntry.h */; };
-		C974E3B614DC5B5C00B98A7C /* MJGCacheEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C974E3B414DC5B5C00B98A7C /* MJGCacheEntry.m */; };
+		C974E3B514DC5B5C00B98A7C /* MJGObjectCacheEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = C974E3B314DC5B5C00B98A7C /* MJGObjectCacheEntry.h */; };
+		C974E3B614DC5B5C00B98A7C /* MJGObjectCacheEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C974E3B414DC5B5C00B98A7C /* MJGObjectCacheEntry.m */; };
 		C974E3F414DEF3B600B98A7C /* ExampleMJGRateViewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C974E3F214DEF3B600B98A7C /* ExampleMJGRateViewViewController.h */; };
 		C974E3F514DEF3B600B98A7C /* ExampleMJGRateViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C974E3F314DEF3B600B98A7C /* ExampleMJGRateViewViewController.m */; };
 		C974E3F714DEF5ED00B98A7C /* star_off.png in Resources */ = {isa = PBXBuildFile; fileRef = C91BFD5714B2FECA00F00F47 /* star_off.png */; };
 		C974E3F814DEF5ED00B98A7C /* star_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C91BFD5814B2FECA00F00F47 /* star_off@2x.png */; };
 		C974E3F914DEF5ED00B98A7C /* star_on.png in Resources */ = {isa = PBXBuildFile; fileRef = C91BFD5914B2FECA00F00F47 /* star_on.png */; };
 		C974E3FA14DEF5ED00B98A7C /* star_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C91BFD5A14B2FECA00F00F47 /* star_on@2x.png */; };
+		C974E40814DF404700B98A7C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C909420E14B85CA200BE443A /* SenTestingKit.framework */; };
+		C974E40914DF404700B98A7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C909421014B85CA200BE443A /* UIKit.framework */; };
+		C974E40A14DF404700B98A7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BF14A609CD003B4206 /* Foundation.framework */; };
+		C974E41E14DF408700B98A7C /* MJGObjectCacheTests-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C974E41A14DF408700B98A7C /* MJGObjectCacheTests-Prefix.pch */; };
+		C974E41F14DF408700B98A7C /* MJGObjectCacheTests.h in Headers */ = {isa = PBXBuildFile; fileRef = C974E41C14DF408700B98A7C /* MJGObjectCacheTests.h */; };
+		C974E42214DF40C900B98A7C /* libMJGFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */; };
+		C974E42314DF412A00B98A7C /* MJGObjectCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C974E41D14DF408700B98A7C /* MJGObjectCacheTests.m */; };
 		C9D0256414C75F5700D494C1 /* MJGAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D0256314C75F5700D494C1 /* MJGAvailability.h */; };
 		C9D7F05614D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D7F05414D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h */; };
 		C9D7F05714D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D7F05514D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m */; };
@@ -125,10 +132,15 @@
 		C95235BF14B86E9E00B880D3 /* MJGRPNCalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRPNCalculatorTests.m; sourceTree = "<group>"; };
 		C974E3AE14DC5B2500B98A7C /* MJGObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGObjectCache.h; sourceTree = "<group>"; };
 		C974E3AF14DC5B2500B98A7C /* MJGObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGObjectCache.m; sourceTree = "<group>"; };
-		C974E3B314DC5B5C00B98A7C /* MJGCacheEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGCacheEntry.h; sourceTree = "<group>"; };
-		C974E3B414DC5B5C00B98A7C /* MJGCacheEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGCacheEntry.m; sourceTree = "<group>"; };
+		C974E3B314DC5B5C00B98A7C /* MJGObjectCacheEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGObjectCacheEntry.h; sourceTree = "<group>"; };
+		C974E3B414DC5B5C00B98A7C /* MJGObjectCacheEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGObjectCacheEntry.m; sourceTree = "<group>"; };
 		C974E3F214DEF3B600B98A7C /* ExampleMJGRateViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleMJGRateViewViewController.h; sourceTree = "<group>"; };
 		C974E3F314DEF3B600B98A7C /* ExampleMJGRateViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleMJGRateViewViewController.m; sourceTree = "<group>"; };
+		C974E40714DF404700B98A7C /* MJGObjectCacheTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJGObjectCacheTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C974E41914DF408700B98A7C /* MJGObjectCacheTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MJGObjectCacheTests-Info.plist"; sourceTree = "<group>"; };
+		C974E41A14DF408700B98A7C /* MJGObjectCacheTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJGObjectCacheTests-Prefix.pch"; sourceTree = "<group>"; };
+		C974E41C14DF408700B98A7C /* MJGObjectCacheTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGObjectCacheTests.h; sourceTree = "<group>"; };
+		C974E41D14DF408700B98A7C /* MJGObjectCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGObjectCacheTests.m; sourceTree = "<group>"; };
 		C9D0256314C75F5700D494C1 /* MJGAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGAvailability.h; sourceTree = "<group>"; };
 		C9D7F05414D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJG2DPinchGestureRecognizer.h; sourceTree = "<group>"; };
 		C9D7F05514D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJG2DPinchGestureRecognizer.m; sourceTree = "<group>"; };
@@ -183,6 +195,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C974E40314DF404700B98A7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C974E40814DF404700B98A7C /* SenTestingKit.framework in Frameworks */,
+				C974E40914DF404700B98A7C /* UIKit.framework in Frameworks */,
+				C974E40A14DF404700B98A7C /* Foundation.framework in Frameworks */,
+				C974E42214DF40C900B98A7C /* libMJGFoundation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9EB54B914A609CD003B4206 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,8 +237,8 @@
 			children = (
 				C901CB2B14B7B3A500C3FD84 /* MJGStack.h */,
 				C901CB2C14B7B3A500C3FD84 /* MJGStack.m */,
-				C974E3B314DC5B5C00B98A7C /* MJGCacheEntry.h */,
-				C974E3B414DC5B5C00B98A7C /* MJGCacheEntry.m */,
+				C974E3B314DC5B5C00B98A7C /* MJGObjectCacheEntry.h */,
+				C974E3B414DC5B5C00B98A7C /* MJGObjectCacheEntry.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,9 +371,37 @@
 		C974E40114DF3FC800B98A7C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C974E41814DF408700B98A7C /* MJGObjectCacheTests */,
 				C909421314B85CA200BE443A /* MJGRPNCalculatorTests */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		C974E41814DF408700B98A7C /* MJGObjectCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				C974E41B14DF408700B98A7C /* Source */,
+				C974E42114DF408F00B98A7C /* Supporting Files */,
+			);
+			path = MJGObjectCacheTests;
+			sourceTree = "<group>";
+		};
+		C974E41B14DF408700B98A7C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C974E41C14DF408700B98A7C /* MJGObjectCacheTests.h */,
+				C974E41D14DF408700B98A7C /* MJGObjectCacheTests.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C974E42114DF408F00B98A7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C974E41914DF408700B98A7C /* MJGObjectCacheTests-Info.plist */,
+				C974E41A14DF408700B98A7C /* MJGObjectCacheTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C9EB54B114A609CD003B4206 = {
@@ -370,6 +421,7 @@
 				C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */,
 				C909420D14B85CA200BE443A /* MJGRPNCalculatorTests.octest */,
 				C909422514B864A800BE443A /* MJGFoundationUICatalog.app */,
+				C974E40714DF404700B98A7C /* MJGObjectCacheTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -550,8 +602,10 @@
 				C9D7F05614D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h in Headers */,
 				C9D7F05B14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.h in Headers */,
 				C974E3B014DC5B2500B98A7C /* MJGObjectCache.h in Headers */,
-				C974E3B514DC5B5C00B98A7C /* MJGCacheEntry.h in Headers */,
+				C974E3B514DC5B5C00B98A7C /* MJGObjectCacheEntry.h in Headers */,
 				C974E3F414DEF3B600B98A7C /* ExampleMJGRateViewViewController.h in Headers */,
+				C974E41E14DF408700B98A7C /* MJGObjectCacheTests-Prefix.pch in Headers */,
+				C974E41F14DF408700B98A7C /* MJGObjectCacheTests.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +647,24 @@
 			productReference = C909422514B864A800BE443A /* MJGFoundationUICatalog.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C974E40614DF404700B98A7C /* MJGObjectCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C974E41514DF404700B98A7C /* Build configuration list for PBXNativeTarget "MJGObjectCacheTests" */;
+			buildPhases = (
+				C974E40214DF404700B98A7C /* Sources */,
+				C974E40314DF404700B98A7C /* Frameworks */,
+				C974E40414DF404700B98A7C /* Resources */,
+				C974E40514DF404700B98A7C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJGObjectCacheTests;
+			productName = MJGObjectCacheTests;
+			productReference = C974E40714DF404700B98A7C /* MJGObjectCacheTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		C9EB54BB14A609CD003B4206 /* MJGFoundation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9EB54C914A609CD003B4206 /* Build configuration list for PBXNativeTarget "MJGFoundation" */;
@@ -633,6 +705,7 @@
 			targets = (
 				C9EB54BB14A609CD003B4206 /* MJGFoundation */,
 				C909420C14B85CA200BE443A /* MJGRPNCalculatorTests */,
+				C974E40614DF404700B98A7C /* MJGObjectCacheTests */,
 				C909422414B864A800BE443A /* MJGFoundationUICatalog */,
 			);
 		};
@@ -659,10 +732,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C974E40414DF404700B98A7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		C909420B14B85CA200BE443A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		C974E40514DF404700B98A7C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -696,6 +789,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C974E40214DF404700B98A7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C974E42314DF412A00B98A7C /* MJGObjectCacheTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9EB54B814A609CD003B4206 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -721,9 +822,9 @@
 				C909420614B84B8900BE443A /* MJGRPNCalculator.m in Sources */,
 				C9D7F05714D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m in Sources */,
 				C9D7F05C14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.m in Sources */,
-				C974E3B114DC5B2500B98A7C /* MJGObjectCache.m in Sources */,
-				C974E3B614DC5B5C00B98A7C /* MJGCacheEntry.m in Sources */,
 				C974E3F514DEF3B600B98A7C /* ExampleMJGRateViewViewController.m in Sources */,
+				C974E3B114DC5B2500B98A7C /* MJGObjectCache.m in Sources */,
+				C974E3B614DC5B5C00B98A7C /* MJGObjectCacheEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,8 +839,8 @@
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MJGRPNCalculatorTests/MJGRPNCalculatorTests-Prefix.pch";
-				INFOPLIST_FILE = "MJGRPNCalculatorTests/MJGRPNCalculatorTests-Info.plist";
+				GCC_PREFIX_HEADER = "Tests/MJGRPNCalculatorTests/MJGRPNCalculatorTests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/MJGRPNCalculatorTests/MJGRPNCalculatorTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -753,8 +854,8 @@
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MJGRPNCalculatorTests/MJGRPNCalculatorTests-Prefix.pch";
-				INFOPLIST_FILE = "MJGRPNCalculatorTests/MJGRPNCalculatorTests-Info.plist";
+				GCC_PREFIX_HEADER = "Tests/MJGRPNCalculatorTests/MJGRPNCalculatorTests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/MJGRPNCalculatorTests/MJGRPNCalculatorTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -786,6 +887,40 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C974E41614DF404700B98A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SDKROOT)/../../../../iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/MJGObjectCacheTests/MJGObjectCacheTests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/MJGObjectCacheTests/MJGObjectCacheTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C974E41714DF404700B98A7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SDKROOT)/../../../../iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/MJGObjectCacheTests/MJGObjectCacheTests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/MJGObjectCacheTests/MJGObjectCacheTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -875,6 +1010,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C974E41514DF404700B98A7C /* Build configuration list for PBXNativeTarget "MJGObjectCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C974E41614DF404700B98A7C /* Debug */,
+				C974E41714DF404700B98A7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		C9EB54B614A609CD003B4206 /* Build configuration list for PBXProject "MJGFoundation" */ = {
 			isa = XCConfigurationList;
