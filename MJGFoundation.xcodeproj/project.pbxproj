@@ -337,12 +337,28 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		C974E3FF14DF3FC600B98A7C /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				C909422B14B864A800BE443A /* MJGFoundationUICatalog */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		C974E40114DF3FC800B98A7C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C909421314B85CA200BE443A /* MJGRPNCalculatorTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		C9EB54B114A609CD003B4206 = {
 			isa = PBXGroup;
 			children = (
 				C9EB54C114A609CD003B4206 /* MJGFoundation */,
-				C909421314B85CA200BE443A /* MJGRPNCalculatorTests */,
-				C909422B14B864A800BE443A /* MJGFoundationUICatalog */,
+				C974E40114DF3FC800B98A7C /* Tests */,
+				C974E3FF14DF3FC600B98A7C /* Apps */,
 				C9EB54BE14A609CD003B4206 /* Frameworks */,
 				C9EB54BD14A609CD003B4206 /* Products */,
 			);
