@@ -201,6 +201,7 @@
     
     value = newValue;
     [self setNeedsDisplay];
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 - (BOOL)beginTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event {
@@ -210,13 +211,11 @@
 
 - (BOOL)continueTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event {
     [self handleTapEventAtLocation:[touch locationInView:self]];
-    [self sendActionsForControlEvents:UIControlEventValueChanged];
 	return YES;
 }
 
 - (void)endTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event {
     [self handleTapEventAtLocation:[touch locationInView:self]];
-	[self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 - (void)cancelTrackingWithEvent:(UIEvent*)event {
