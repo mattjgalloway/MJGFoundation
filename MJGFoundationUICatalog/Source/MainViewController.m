@@ -14,6 +14,7 @@
 #import "MJGImageGalleryViewController.h"
 
 #import "Example2DPinchGestureRecognizerViewController.h"
+#import "ExampleMJGRateViewViewController.h"
 
 @interface MainViewController () <MJGChoiceViewControllerDelegate, MJGFullscreenWebViewControllerDelegate>
 @end
@@ -59,7 +60,7 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -67,6 +68,8 @@
         case 0:
             return 4; break;
         case 1:
+            return 1; break;
+        case 2:
             return 1; break;
         default:
             return 0; break;
@@ -79,6 +82,8 @@
             return @"View controllers"; break;
         case 1:
             return @"Gesture recognizers"; break;
+        case 2:
+            return @"Views"; break;
         default:
             return nil; break;
     }
@@ -111,6 +116,10 @@
     } else if (section == 1) {
         if (row == 0) {
             cell.textLabel.text = @"2D Pinch Gesture";
+        }
+    } else if (section == 2) {
+        if (row == 0) {
+            cell.textLabel.text = @"Rating View";
         }
     }
     
@@ -149,6 +158,11 @@
     } else if (section == 1) {
         if (row == 0) {
             Example2DPinchGestureRecognizerViewController *vc = [[Example2DPinchGestureRecognizerViewController alloc] init];
+            vcToPush = vc;
+        }
+    } else if (section == 2) {
+        if (row == 0) {
+            ExampleMJGRateViewViewController *vc = [[ExampleMJGRateViewViewController alloc] init];
             vcToPush = vc;
         }
     }

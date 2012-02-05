@@ -42,6 +42,16 @@
 		C95235BC14B86E7F00B880D3 /* MainViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95235AC14B86E3000B880D3 /* MainViewController~iphone.xib */; };
 		C95235C014B86E9E00B880D3 /* MJGRPNCalculatorTests.h in Headers */ = {isa = PBXBuildFile; fileRef = C95235BE14B86E9E00B880D3 /* MJGRPNCalculatorTests.h */; };
 		C95235C214B86EAF00B880D3 /* MJGRPNCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C95235BF14B86E9E00B880D3 /* MJGRPNCalculatorTests.m */; };
+		C974E3B014DC5B2500B98A7C /* MJGObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C974E3AE14DC5B2500B98A7C /* MJGObjectCache.h */; };
+		C974E3B114DC5B2500B98A7C /* MJGObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C974E3AF14DC5B2500B98A7C /* MJGObjectCache.m */; };
+		C974E3B514DC5B5C00B98A7C /* MJGCacheEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = C974E3B314DC5B5C00B98A7C /* MJGCacheEntry.h */; };
+		C974E3B614DC5B5C00B98A7C /* MJGCacheEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C974E3B414DC5B5C00B98A7C /* MJGCacheEntry.m */; };
+		C974E3F414DEF3B600B98A7C /* ExampleMJGRateViewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C974E3F214DEF3B600B98A7C /* ExampleMJGRateViewViewController.h */; };
+		C974E3F514DEF3B600B98A7C /* ExampleMJGRateViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C974E3F314DEF3B600B98A7C /* ExampleMJGRateViewViewController.m */; };
+		C974E3F714DEF5ED00B98A7C /* star_off.png in Resources */ = {isa = PBXBuildFile; fileRef = C91BFD5714B2FECA00F00F47 /* star_off.png */; };
+		C974E3F814DEF5ED00B98A7C /* star_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C91BFD5814B2FECA00F00F47 /* star_off@2x.png */; };
+		C974E3F914DEF5ED00B98A7C /* star_on.png in Resources */ = {isa = PBXBuildFile; fileRef = C91BFD5914B2FECA00F00F47 /* star_on.png */; };
+		C974E3FA14DEF5ED00B98A7C /* star_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C91BFD5A14B2FECA00F00F47 /* star_on@2x.png */; };
 		C9D0256414C75F5700D494C1 /* MJGAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D0256314C75F5700D494C1 /* MJGAvailability.h */; };
 		C9D7F05614D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D7F05414D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h */; };
 		C9D7F05714D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D7F05514D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m */; };
@@ -113,6 +123,12 @@
 		C95235B214B86E3000B880D3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C95235BE14B86E9E00B880D3 /* MJGRPNCalculatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRPNCalculatorTests.h; sourceTree = "<group>"; };
 		C95235BF14B86E9E00B880D3 /* MJGRPNCalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRPNCalculatorTests.m; sourceTree = "<group>"; };
+		C974E3AE14DC5B2500B98A7C /* MJGObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGObjectCache.h; sourceTree = "<group>"; };
+		C974E3AF14DC5B2500B98A7C /* MJGObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGObjectCache.m; sourceTree = "<group>"; };
+		C974E3B314DC5B5C00B98A7C /* MJGCacheEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGCacheEntry.h; sourceTree = "<group>"; };
+		C974E3B414DC5B5C00B98A7C /* MJGCacheEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGCacheEntry.m; sourceTree = "<group>"; };
+		C974E3F214DEF3B600B98A7C /* ExampleMJGRateViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleMJGRateViewViewController.h; sourceTree = "<group>"; };
+		C974E3F314DEF3B600B98A7C /* ExampleMJGRateViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleMJGRateViewViewController.m; sourceTree = "<group>"; };
 		C9D0256314C75F5700D494C1 /* MJGAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGAvailability.h; sourceTree = "<group>"; };
 		C9D7F05414D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJG2DPinchGestureRecognizer.h; sourceTree = "<group>"; };
 		C9D7F05514D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJG2DPinchGestureRecognizer.m; sourceTree = "<group>"; };
@@ -198,6 +214,8 @@
 			children = (
 				C901CB2B14B7B3A500C3FD84 /* MJGStack.h */,
 				C901CB2C14B7B3A500C3FD84 /* MJGStack.m */,
+				C974E3B314DC5B5C00B98A7C /* MJGCacheEntry.h */,
+				C974E3B414DC5B5C00B98A7C /* MJGCacheEntry.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +226,8 @@
 				C9D0256314C75F5700D494C1 /* MJGAvailability.h */,
 				C901CB2714B7A86E00C3FD84 /* MJGImageLoader.h */,
 				C901CB2814B7A86E00C3FD84 /* MJGImageLoader.m */,
+				C974E3AE14DC5B2500B98A7C /* MJGObjectCache.h */,
+				C974E3AF14DC5B2500B98A7C /* MJGObjectCache.m */,
 				C909420314B84B8900BE443A /* MJGRPNCalculator.h */,
 				C909420414B84B8900BE443A /* MJGRPNCalculator.m */,
 			);
@@ -302,6 +322,8 @@
 				C95235B214B86E3000B880D3 /* MainViewController.m */,
 				C9D7F05914D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.h */,
 				C9D7F05A14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.m */,
+				C974E3F214DEF3B600B98A7C /* ExampleMJGRateViewViewController.h */,
+				C974E3F314DEF3B600B98A7C /* ExampleMJGRateViewViewController.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -511,6 +533,9 @@
 				C9D0256414C75F5700D494C1 /* MJGAvailability.h in Headers */,
 				C9D7F05614D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h in Headers */,
 				C9D7F05B14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.h in Headers */,
+				C974E3B014DC5B2500B98A7C /* MJGObjectCache.h in Headers */,
+				C974E3B514DC5B5C00B98A7C /* MJGCacheEntry.h in Headers */,
+				C974E3F414DEF3B600B98A7C /* ExampleMJGRateViewViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +601,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Matt Galloway";
 			};
 			buildConfigurationList = C9EB54B614A609CD003B4206 /* Build configuration list for PBXProject "MJGFoundation" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -608,6 +634,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C974E3F714DEF5ED00B98A7C /* star_off.png in Resources */,
+				C974E3F814DEF5ED00B98A7C /* star_off@2x.png in Resources */,
+				C974E3F914DEF5ED00B98A7C /* star_on.png in Resources */,
+				C974E3FA14DEF5ED00B98A7C /* star_on@2x.png in Resources */,
 				C95235BB14B86E7F00B880D3 /* MainViewController~ipad.xib in Resources */,
 				C95235BC14B86E7F00B880D3 /* MainViewController~iphone.xib in Resources */,
 			);
@@ -675,6 +705,9 @@
 				C909420614B84B8900BE443A /* MJGRPNCalculator.m in Sources */,
 				C9D7F05714D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m in Sources */,
 				C9D7F05C14D98364002C2AC1 /* Example2DPinchGestureRecognizerViewController.m in Sources */,
+				C974E3B114DC5B2500B98A7C /* MJGObjectCache.m in Sources */,
+				C974E3B614DC5B5C00B98A7C /* MJGCacheEntry.m in Sources */,
+				C974E3F514DEF3B600B98A7C /* ExampleMJGRateViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
