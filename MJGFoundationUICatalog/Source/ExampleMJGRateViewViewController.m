@@ -12,6 +12,13 @@
 
 @implementation ExampleMJGRateViewViewController
 
+#pragma mark -
+
+- (void)changedValue:(id)sender {
+    NSLog(@"Value = %.2f", [(MJGRateView*)sender value]);
+}
+
+
 #pragma mark - View lifecycle
 
 - (id)init {
@@ -33,6 +40,7 @@
     
     MJGRateView *rateView1 = [[MJGRateView alloc] initWithFrame:CGRectMake(20.0f, 20.0f, 180.0f, 60.0f)];
     rateView1.max = 5;
+    [rateView1 addTarget:self action:@selector(changedValue:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:rateView1];
     
     MJGRateView *rateView2 = [[MJGRateView alloc] initWithFrame:CGRectMake(20.0f, 100.0f, 180.0f, 60.0f)];
@@ -40,6 +48,7 @@
     rateView2.value = 3;
     rateView2.allowHalf = NO;
     rateView2.enabled = NO;
+    [rateView2 addTarget:self action:@selector(changedValue:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:rateView2];
 }
 
