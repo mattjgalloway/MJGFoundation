@@ -28,7 +28,7 @@
 
 @implementation MJGRateView
 
-@synthesize max, value, allowEditing, delegate;
+@synthesize max, value, allowHalf, delegate;
 @synthesize onImage, halfImage, offImage;
 
 #pragma mark - Custom Accessors
@@ -44,11 +44,6 @@
 - (void)setValue:(CGFloat)inValue {
     value = inValue;
     [self setNeedsDisplay];
-}
-
-- (void)setAllowEditing:(BOOL)inAllowEditing {
-    allowEditing = inAllowEditing;
-    self.userInteractionEnabled = allowEditing;
 }
 
 - (void)setOnImage:(UIImage*)inOnImage offImage:(UIImage*)inOffImage {
@@ -74,7 +69,7 @@
     
     max = 5;
     value = 1.0;
-    allowEditing = YES;
+    allowHalf = YES;
     
     self.userInteractionEnabled = YES;
     self.backgroundColor = [UIColor clearColor];
@@ -87,8 +82,11 @@
     return self;
 }
 
-- (void)awakeFromNib {
-    [self setupInstance];
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    if ((self = [super initWithCoder:aDecoder])) {
+        [self setupInstance];
+    }
+    return self;
 }
 
 
@@ -107,22 +105,19 @@
                                                  colorSpace, 
                                                  kCGImageAlphaNone);
 	
-	CGContextTranslateCTM(context, 0, h);
-	CGContextScaleCTM(context, 1, -1);
-	
-	if(cutLeftSide) {
-        CGContextSetRGBFillColor(context, 0, 0, 0, 1);
+	if (cutLeftSide) {
+        CGContextSetRGBFillColor(context, 0.0f, 0.0f, 0.0f, 1.0f);
     } else {
-        CGContextSetRGBFillColor(context, 1, 1, 1, 1);
+        CGContextSetRGBFillColor(context, 1.0f, 1.0f, 1.0f, 1.0f);
     }
-	CGContextFillRect(context, CGRectMake(0, 0, w/2.0f, h));
+	CGContextFillRect(context, CGRectMake(0.0f, 0.0f, w/2.0f, h));
 	
-	if(cutLeftSide) {
-        CGContextSetRGBFillColor(context, 1, 1, 1, 1);
+	if (cutLeftSide) {
+        CGContextSetRGBFillColor(context, 1.0f, 1.0f, 1.0f, 1.0f);
     } else {
-        CGContextSetRGBFillColor(context, 0, 0, 0, 1);
+        CGContextSetRGBFillColor(context, 0.0f, 0.0f, 0.0f, 1.0f);
     }
-	CGContextFillRect(context, CGRectMake(w/2.0f, 0, w/2.0f, h));
+	CGContextFillRect(context, CGRectMake(w/2.0f, 0.0f, w/2.0f, h));
 	
 	CGImageRef theCGImage = CGBitmapContextCreateImage(context);
 	CGContextRelease(context);
@@ -174,7 +169,7 @@
         if (CGRectIntersectsRect(starRect, rect)) {
             if (value >= (i+1)) {
                 [onImage drawInRect:starRect];
-            } else if ((value+0.5) >= (i+1)) {
+            } else if (allowHalf && ((value+0.5) >= (i+1))) {
                 if (halfImage) {
                     [halfImage drawInRect:starRect];
                 } else {
@@ -191,19 +186,14 @@
 #pragma mark - Touch Handling
 
 - (CGFloat)getTappedBucket:(CGPoint)touchPoint {
-    float fraction = (touchPoint.x / self.frame.size.width);
-    int bucket = (fraction * max * 2) + 1;
-    CGFloat ret = (float)bucket / 2.0;
-    ret = MIN(ret, (CGFloat)max);
-    ret = MAX(ret, 0.0f);
-    return ret;
+    CGFloat fraction = (touchPoint.x / self.frame.size.width);
+    CGFloat bucket = floorf((fraction * max * 2.0f) + 1.0f) / 2.0f;
+    bucket = MIN(bucket, (CGFloat)max);
+    bucket = MAX(bucket, 0.0f);
+    return bucket;
 }
 
 - (void)handleTapEventAtLocation:(CGPoint)location {
-    if (!allowEditing) {
-        return;
-    }
-    
     CGFloat newValue = [self getTappedBucket:location];
     if (value == newValue) {
         return;
@@ -217,22 +207,23 @@
     }
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [[event allTouches] anyObject];
-    CGPoint lastLocation = [touch locationInView:self];
-    [self handleTapEventAtLocation:lastLocation];
+- (BOOL)beginTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event {
+    [self handleTapEventAtLocation:[touch locationInView:self]];
+	return YES;
 }
 
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [[event allTouches] anyObject];
-    CGPoint lastLocation = [touch locationInView:self];
-    [self handleTapEventAtLocation:lastLocation];
+- (BOOL)continueTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event {
+    [self handleTapEventAtLocation:[touch locationInView:self]];
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
+	return YES;
 }
 
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [[event allTouches] anyObject];
-    CGPoint lastLocation = [touch locationInView:self];
-    [self handleTapEventAtLocation:lastLocation];
+- (void)endTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event {
+    [self handleTapEventAtLocation:[touch locationInView:self]];
+	[self sendActionsForControlEvents:UIControlEventValueChanged];
+}
+
+- (void)cancelTrackingWithEvent:(UIEvent*)event {
 }
 
 @end

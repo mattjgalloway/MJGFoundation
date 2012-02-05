@@ -15,11 +15,11 @@
 - (void)rateView:(MJGRateView*)rateView changedValueTo:(CGFloat)newValue;
 @end
 
-@interface MJGRateView : UIView
+@interface MJGRateView : UIControl
 
-@property (nonatomic, unsafe_unretained) NSInteger max;
-@property (nonatomic, unsafe_unretained) CGFloat value;
-@property (nonatomic, unsafe_unretained) BOOL allowEditing;
+@property (nonatomic, assign) NSInteger max;
+@property (nonatomic, assign) CGFloat value;
+@property (nonatomic, assign) BOOL allowHalf;
 
 @property (nonatomic, unsafe_unretained) id <MJGRateViewDelegate> delegate;
 
