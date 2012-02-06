@@ -21,4 +21,6 @@
 
 - (id)initWithURL:(NSURL*)url;
 
+- (void)setToolbarTintColor:(UIColor*)color;
+
 @end

@@ -15,6 +15,7 @@
 @interface MJGFullscreenWebViewController ()
 @property (nonatomic, strong) UIWebView *webView;
 @property (nonatomic, strong) UIView *loadingView;
+@property (nonatomic, strong) UIToolbar *toolbar;
 @property (nonatomic, strong) UIBarButtonItem *backButton;
 @property (nonatomic, strong) UIBarButtonItem *forwardButton;
 @property (nonatomic, strong) UIBarButtonItem *refreshButton;
@@ -22,6 +23,8 @@
 
 @property (nonatomic, strong) NSURL *startURL;
 @property (nonatomic, strong) NSTimer *buttonRefreshTimer;
+
+@property (nonatomic, strong) UIColor *savedToolbarTintColor;
 
 - (void)done:(id)sender;
 
@@ -32,9 +35,18 @@
 
 @implementation MJGFullscreenWebViewController
 
-@synthesize webView = _webView, loadingView = _loadingView, backButton = _backButton, forwardButton = _forwardButton, refreshButton = _refreshButton, stopButton = _stopButton;
+@synthesize webView = _webView, loadingView = _loadingView, toolbar = _toolbar, backButton = _backButton, forwardButton = _forwardButton, refreshButton = _refreshButton, stopButton = _stopButton;
 @synthesize delegate = _delegate;
 @synthesize startURL = _startURL, buttonRefreshTimer = _buttonRefreshTimer;
+@synthesize savedToolbarTintColor = _savedToolbarTintColor;
+
+#pragma mark -
+
+- (void)setToolbarTintColor:(UIColor*)color {
+    _savedToolbarTintColor = color;
+    [_toolbar setTintColor:color];
+}
+
 
 #pragma mark -
 
@@ -108,9 +120,12 @@
     _webView.delegate = self;
     [self.view addSubview:_webView];
     
-    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0f, bounds.size.height - 44.0f, bounds.size.width, 44.0f)];
-    toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-    [self.view addSubview:toolbar];
+    _toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0f, bounds.size.height - 44.0f, bounds.size.width, 44.0f)];
+    _toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    if (_savedToolbarTintColor) {
+        _toolbar.tintColor = _savedToolbarTintColor;
+    }
+    [self.view addSubview:_toolbar];
     
     UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     _backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:_webView action:@selector(goBack)];
@@ -123,7 +138,7 @@
     _refreshButton.style = UIBarButtonItemStyleBordered;
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:self action:@selector(done:)];
     
-    toolbar.items = [NSArray arrayWithObjects:spacer, _backButton, spacer, _forwardButton, spacer, _stopButton, spacer, _refreshButton, spacer, doneButton, spacer, nil];
+    _toolbar.items = [NSArray arrayWithObjects:spacer, _backButton, spacer, _forwardButton, spacer, _stopButton, spacer, _refreshButton, spacer, doneButton, spacer, nil];
     
     _loadingView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, -30.0f, bounds.size.width, 30.0f)];
     _loadingView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
@@ -167,6 +182,7 @@
     _webView.delegate = nil;
     _webView = nil;
     _loadingView = nil;
+    _toolbar = nil;
     _backButton = nil;
     _forwardButton = nil;
     _refreshButton = nil;
