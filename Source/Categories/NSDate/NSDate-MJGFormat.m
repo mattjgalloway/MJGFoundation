@@ -13,6 +13,28 @@
 
 @implementation NSDate (MJGFormat)
 
++ (NSDate*)dateFromString:(NSString*)string withFormat:(NSString*)format {
+    if (!format || !string) {
+        return nil;
+    }
+    
+    const char *str = [string UTF8String];
+    const char *fmt = [format UTF8String];
+    struct tm timeinfo;
+    memset(&timeinfo, 0, sizeof(timeinfo));
+    char *ret = strptime_l(str, fmt, &timeinfo, NULL);
+    
+    if (!ret) {
+        return nil;
+    }
+    
+    time_t time = mktime(&timeinfo);
+    
+    NSDate *retDate = [NSDate dateWithTimeIntervalSince1970:time];
+    
+    return retDate;
+}
+
 - (NSString*)dateStringWithFormat:(NSString*)format {
     if (!format) {
         return nil;

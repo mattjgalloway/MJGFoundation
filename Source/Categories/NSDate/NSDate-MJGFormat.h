@@ -10,6 +10,7 @@
 
 @interface NSDate (MJGFormat)
 
++ (NSDate*)dateFromString:(NSString*)string withFormat:(NSString*)format;
 - (NSString*)dateStringWithFormat:(NSString*)format;
 
 @end
