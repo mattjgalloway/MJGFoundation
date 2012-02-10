@@ -118,6 +118,7 @@
     _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, bounds.size.width, bounds.size.height - 44.0f)];
     _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _webView.delegate = self;
+    _webView.scalesPageToFit = YES;
     [self.view addSubview:_webView];
     
     _toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0f, bounds.size.height - 44.0f, bounds.size.width, 44.0f)];
