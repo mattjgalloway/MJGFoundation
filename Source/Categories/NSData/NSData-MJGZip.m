@@ -18,7 +18,7 @@
     if (self.length == 0) return self;
     
     NSUInteger fullLength = self.length;
-    NSUInteger halfLength = halfLength / 2;
+    NSUInteger halfLength = fullLength / 2;
     
     NSMutableData *decompressed = [NSMutableData dataWithLength:(fullLength + halfLength)];
     BOOL done = NO;
