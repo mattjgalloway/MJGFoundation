@@ -69,7 +69,7 @@ static const NSTimeInterval kDefaultFadeTime = 0.5;
 #pragma mark - View lifecycle
 
 - (id)initWithWindow:(UIWindow*)window {
-    if ((self = [super initWithFrame:CGRectZero])) {
+    if ((self = [super initWithFrame:window.bounds])) {
         self.window = window;
         
         self.opaque = NO;
@@ -78,7 +78,7 @@ static const NSTimeInterval kDefaultFadeTime = 0.5;
         _displayTime = kDefaultDisplayTime;
         _fadeTime = kDefaultFadeTime;
         
-        _splashImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default.png"]];
+        _splashImageView = [[UIImageView alloc] initWithImage:nil];
         _splashImageView.opaque = NO;
         _splashImageView.backgroundColor = [UIColor clearColor];
         _splashImageView.contentMode = UIViewContentModeCenter;
@@ -89,7 +89,41 @@ static const NSTimeInterval kDefaultFadeTime = 0.5;
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    _splashImageView.frame = self.bounds;
+    
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    CGPoint offset = CGPointZero;
+    UIImage *image = nil;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        image = [UIImage imageNamed:@"Default.png"];
+    } else {
+        UIInterfaceOrientation ori = [[UIApplication sharedApplication] statusBarOrientation];
+        if (UIInterfaceOrientationIsPortrait(ori)) {
+            image = [UIImage imageNamed:@"Default-Portrait.png"];
+        } else {
+            image = [UIImage imageNamed:@"Default-Landscape.png"];
+        }
+        
+        switch (ori) {
+            case UIInterfaceOrientationPortrait:
+                break;
+            case UIInterfaceOrientationPortraitUpsideDown:
+                transform = CGAffineTransformMakeRotation(M_PI);
+                offset = CGPointMake(0.0f, -20.0f);
+                break;
+            case UIInterfaceOrientationLandscapeLeft:
+                transform = CGAffineTransformMakeRotation(-M_PI_2);
+                offset = CGPointMake(20.0f, 0.0f);
+                break;
+            case UIInterfaceOrientationLandscapeRight:
+                transform = CGAffineTransformMakeRotation(M_PI_2);
+                offset = CGPointMake(-20.0f, 0.0f);
+                break;
+        }
+    }
+    _splashImageView.image = image;
+    _splashImageView.transform = transform;
+    _splashImageView.bounds = self.bounds;
+    _splashImageView.center = CGPointMake((self.bounds.size.width + offset.x) / 2.0f, (self.bounds.size.height + offset.y) / 2.0f);
 }
 
 @end
