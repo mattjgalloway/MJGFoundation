@@ -33,7 +33,7 @@
 
 #import <Availability.h>
 
-#define __AVAILABILITY_TOO_NEW __attribute__((deprecated("TOO NEW!")))
+#define __AVAILABILITY_TOO_NEW __attribute__((deprecated("TOO NEW!"))) __attribute__((weak_import))
 
 #ifndef __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED
 #define __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED __IPHONE_OS_VERSION_MIN_REQUIRED
