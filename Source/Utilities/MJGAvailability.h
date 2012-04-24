@@ -18,6 +18,17 @@
  *   
  *   // The rest of your prefix header as normal
  *   #import <UIKit/UIKit.h>
+ * 
+ * If you want to suppress a single warning (i.e. because you know that what you're doing is 
+ * actually OK) then you can do something like this:
+ *
+ *   UINavigationBar *navBar = self.navigationController.navigationBar;
+ *   if ([navBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
+ *   #pragma clang diagnostic push
+ *   #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+ *       [navBar setBackgroundImage:[UIImage imageNamed:@"navbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
+ *   #pragma clang diagnostic pop
+ *   }
  */
 
 #import <Availability.h>
