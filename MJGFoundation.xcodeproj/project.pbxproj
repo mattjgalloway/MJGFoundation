@@ -34,6 +34,8 @@
 		C909424C14B868C800BE443A /* libMJGFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */; };
 		C91BFD5214B2FCF300F00F47 /* MJGRateView.h in Headers */ = {isa = PBXBuildFile; fileRef = C91BFD5014B2FCF300F00F47 /* MJGRateView.h */; };
 		C91BFD5314B2FCF300F00F47 /* MJGRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C91BFD5114B2FCF300F00F47 /* MJGRateView.m */; };
+		C945E94F15B5F45800F560BD /* MJGSortedMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = C945E94D15B5F45800F560BD /* MJGSortedMutableArray.h */; };
+		C945E95015B5F45800F560BD /* MJGSortedMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C945E94E15B5F45800F560BD /* MJGSortedMutableArray.m */; };
 		C95235B314B86E3000B880D3 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C95235AE14B86E3000B880D3 /* AppDelegate.h */; };
 		C95235B614B86E3000B880D3 /* MainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C95235B114B86E3000B880D3 /* MainViewController.h */; };
 		C95235B914B86E7300B880D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C95235AF14B86E3000B880D3 /* AppDelegate.m */; };
@@ -122,6 +124,8 @@
 		C91BFD5814B2FECA00F00F47 /* star_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_off@2x.png"; sourceTree = "<group>"; };
 		C91BFD5914B2FECA00F00F47 /* star_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_on.png; sourceTree = "<group>"; };
 		C91BFD5A14B2FECA00F00F47 /* star_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_on@2x.png"; sourceTree = "<group>"; };
+		C945E94D15B5F45800F560BD /* MJGSortedMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGSortedMutableArray.h; sourceTree = "<group>"; };
+		C945E94E15B5F45800F560BD /* MJGSortedMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGSortedMutableArray.m; sourceTree = "<group>"; };
 		C95235AB14B86E3000B880D3 /* MainViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainViewController~ipad.xib"; sourceTree = "<group>"; };
 		C95235AC14B86E3000B880D3 /* MainViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainViewController~iphone.xib"; sourceTree = "<group>"; };
 		C95235AE14B86E3000B880D3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 				C901CB2C14B7B3A500C3FD84 /* MJGStack.m */,
 				C974E3B314DC5B5C00B98A7C /* MJGObjectCacheEntry.h */,
 				C974E3B414DC5B5C00B98A7C /* MJGObjectCacheEntry.m */,
+				C945E94D15B5F45800F560BD /* MJGSortedMutableArray.h */,
+				C945E94E15B5F45800F560BD /* MJGSortedMutableArray.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -606,6 +612,7 @@
 				C974E3F414DEF3B600B98A7C /* ExampleMJGRateViewViewController.h in Headers */,
 				C974E41E14DF408700B98A7C /* MJGObjectCacheTests-Prefix.pch in Headers */,
 				C974E41F14DF408700B98A7C /* MJGObjectCacheTests.h in Headers */,
+				C945E94F15B5F45800F560BD /* MJGSortedMutableArray.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,6 +832,7 @@
 				C974E3F514DEF3B600B98A7C /* ExampleMJGRateViewViewController.m in Sources */,
 				C974E3B114DC5B2500B98A7C /* MJGObjectCache.m in Sources */,
 				C974E3B614DC5B5C00B98A7C /* MJGObjectCacheEntry.m in Sources */,
+				C945E95015B5F45800F560BD /* MJGSortedMutableArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
