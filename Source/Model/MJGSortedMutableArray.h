@@ -6,6 +6,11 @@
 //  Copyright (c) 2012 Matt Galloway. All rights reserved.
 //
 
+/**
+ * This class is designed to be an array that keeps itself sorted as you add objects to it. 
+ * When you add an object, you get the index where it was added returned.
+ */
+
 #import <Foundation/Foundation.h>
 
 @interface MJGSortedMutableArray : NSObject
