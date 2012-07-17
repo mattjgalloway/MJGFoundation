@@ -36,6 +36,11 @@
 		C91BFD5314B2FCF300F00F47 /* MJGRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C91BFD5114B2FCF300F00F47 /* MJGRateView.m */; };
 		C945E94F15B5F45800F560BD /* MJGSortedMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = C945E94D15B5F45800F560BD /* MJGSortedMutableArray.h */; };
 		C945E95015B5F45800F560BD /* MJGSortedMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C945E94E15B5F45800F560BD /* MJGSortedMutableArray.m */; };
+		C945E99B15B6059500F560BD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C909420E14B85CA200BE443A /* SenTestingKit.framework */; };
+		C945E99C15B6059500F560BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C909421014B85CA200BE443A /* UIKit.framework */; };
+		C945E99D15B6059500F560BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BF14A609CD003B4206 /* Foundation.framework */; };
+		C945E9AB15B605C400F560BD /* MJGSortedMutableArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C945E99115B6051900F560BD /* MJGSortedMutableArrayTests.m */; };
+		C945E9AD15B60F4C00F560BD /* libMJGFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB54BC14A609CD003B4206 /* libMJGFoundation.a */; };
 		C95235B314B86E3000B880D3 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C95235AE14B86E3000B880D3 /* AppDelegate.h */; };
 		C95235B614B86E3000B880D3 /* MainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C95235B114B86E3000B880D3 /* MainViewController.h */; };
 		C95235B914B86E7300B880D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C95235AF14B86E3000B880D3 /* AppDelegate.m */; };
@@ -126,6 +131,11 @@
 		C91BFD5A14B2FECA00F00F47 /* star_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_on@2x.png"; sourceTree = "<group>"; };
 		C945E94D15B5F45800F560BD /* MJGSortedMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGSortedMutableArray.h; sourceTree = "<group>"; };
 		C945E94E15B5F45800F560BD /* MJGSortedMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGSortedMutableArray.m; sourceTree = "<group>"; };
+		C945E98D15B6051900F560BD /* MJGSortedMutableArrayTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MJGSortedMutableArrayTests-Info.plist"; sourceTree = "<group>"; };
+		C945E98E15B6051900F560BD /* MJGSortedMutableArrayTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJGSortedMutableArrayTests-Prefix.pch"; sourceTree = "<group>"; };
+		C945E99015B6051900F560BD /* MJGSortedMutableArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGSortedMutableArrayTests.h; sourceTree = "<group>"; };
+		C945E99115B6051900F560BD /* MJGSortedMutableArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGSortedMutableArrayTests.m; sourceTree = "<group>"; };
+		C945E99A15B6059500F560BD /* MJGSortedMutableArrayTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJGSortedMutableArrayTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95235AB14B86E3000B880D3 /* MainViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainViewController~ipad.xib"; sourceTree = "<group>"; };
 		C95235AC14B86E3000B880D3 /* MainViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainViewController~iphone.xib"; sourceTree = "<group>"; };
 		C95235AE14B86E3000B880D3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -196,6 +206,17 @@
 				C909422814B864A800BE443A /* Foundation.framework in Frameworks */,
 				C909422A14B864A800BE443A /* CoreGraphics.framework in Frameworks */,
 				C909424C14B868C800BE443A /* libMJGFoundation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C945E99615B6059500F560BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C945E99B15B6059500F560BD /* SenTestingKit.framework in Frameworks */,
+				C945E99C15B6059500F560BD /* UIKit.framework in Frameworks */,
+				C945E99D15B6059500F560BD /* Foundation.framework in Frameworks */,
+				C945E9AD15B60F4C00F560BD /* libMJGFoundation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +354,33 @@
 			path = MJGRateView;
 			sourceTree = "<group>";
 		};
+		C945E98C15B6051900F560BD /* MJGSortedMutableArrayTests */ = {
+			isa = PBXGroup;
+			children = (
+				C945E98F15B6051900F560BD /* Source */,
+				C945E99415B6051F00F560BD /* Supporting Files */,
+			);
+			path = MJGSortedMutableArrayTests;
+			sourceTree = "<group>";
+		};
+		C945E98F15B6051900F560BD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C945E99015B6051900F560BD /* MJGSortedMutableArrayTests.h */,
+				C945E99115B6051900F560BD /* MJGSortedMutableArrayTests.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C945E99415B6051F00F560BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C945E98D15B6051900F560BD /* MJGSortedMutableArrayTests-Info.plist */,
+				C945E98E15B6051900F560BD /* MJGSortedMutableArrayTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C95235AA14B86E3000B880D3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +427,7 @@
 			children = (
 				C974E41814DF408700B98A7C /* MJGObjectCacheTests */,
 				C909421314B85CA200BE443A /* MJGRPNCalculatorTests */,
+				C945E98C15B6051900F560BD /* MJGSortedMutableArrayTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -428,6 +477,7 @@
 				C909420D14B85CA200BE443A /* MJGRPNCalculatorTests.octest */,
 				C909422514B864A800BE443A /* MJGFoundationUICatalog.app */,
 				C974E40714DF404700B98A7C /* MJGObjectCacheTests.octest */,
+				C945E99A15B6059500F560BD /* MJGSortedMutableArrayTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -654,6 +704,24 @@
 			productReference = C909422514B864A800BE443A /* MJGFoundationUICatalog.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C945E99915B6059500F560BD /* MJGSortedMutableArrayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C945E9A815B6059500F560BD /* Build configuration list for PBXNativeTarget "MJGSortedMutableArrayTests" */;
+			buildPhases = (
+				C945E99515B6059500F560BD /* Sources */,
+				C945E99615B6059500F560BD /* Frameworks */,
+				C945E99715B6059500F560BD /* Resources */,
+				C945E99815B6059500F560BD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJGSortedMutableArrayTests;
+			productName = MJGSortedMutableArrayTests;
+			productReference = C945E99A15B6059500F560BD /* MJGSortedMutableArrayTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		C974E40614DF404700B98A7C /* MJGObjectCacheTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C974E41514DF404700B98A7C /* Build configuration list for PBXNativeTarget "MJGObjectCacheTests" */;
@@ -713,6 +781,7 @@
 				C9EB54BB14A609CD003B4206 /* MJGFoundation */,
 				C909420C14B85CA200BE443A /* MJGRPNCalculatorTests */,
 				C974E40614DF404700B98A7C /* MJGObjectCacheTests */,
+				C945E99915B6059500F560BD /* MJGSortedMutableArrayTests */,
 				C909422414B864A800BE443A /* MJGFoundationUICatalog */,
 			);
 		};
@@ -739,6 +808,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C945E99715B6059500F560BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C974E40414DF404700B98A7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -750,6 +826,19 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		C909420B14B85CA200BE443A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		C945E99815B6059500F560BD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -793,6 +882,14 @@
 				C909423214B864A800BE443A /* main.m in Sources */,
 				C95235B914B86E7300B880D3 /* AppDelegate.m in Sources */,
 				C95235BA14B86E7300B880D3 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C945E99515B6059500F560BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C945E9AB15B605C400F560BD /* MJGSortedMutableArrayTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -895,6 +992,40 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C945E9A915B6059500F560BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/MJGSortedMutableArrayTests/MJGSortedMutableArrayTests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "Tests/MJGSortedMutableArrayTests/MJGSortedMutableArrayTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C945E9AA15B6059500F560BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/MJGSortedMutableArrayTests/MJGSortedMutableArrayTests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "Tests/MJGSortedMutableArrayTests/MJGSortedMutableArrayTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -1017,6 +1148,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C945E9A815B6059500F560BD /* Build configuration list for PBXNativeTarget "MJGSortedMutableArrayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C945E9A915B6059500F560BD /* Debug */,
+				C945E9AA15B6059500F560BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C974E41514DF404700B98A7C /* Build configuration list for PBXNativeTarget "MJGObjectCacheTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1024,6 +1163,7 @@
 				C974E41714DF404700B98A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9EB54B614A609CD003B4206 /* Build configuration list for PBXProject "MJGFoundation" */ = {
 			isa = XCConfigurationList;
