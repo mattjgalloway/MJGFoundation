@@ -181,8 +181,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C909421214B85CA200BE443A /* Foundation.framework in Frameworks */,
 				C909420F14B85CA200BE443A /* SenTestingKit.framework in Frameworks */,
+				C909421214B85CA200BE443A /* Foundation.framework in Frameworks */,
 				C909421114B85CA200BE443A /* UIKit.framework in Frameworks */,
 				C909422014B85F4000BE443A /* libMJGFoundation.a in Frameworks */,
 			);
