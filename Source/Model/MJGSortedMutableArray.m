@@ -67,6 +67,10 @@
     return self;
 }
 
+- (NSString*)description {
+    return [NSString stringWithFormat:@"<%@: %p, %@>", NSStringFromClass([self class]), self, _backingArray];
+}
+
 
 #pragma mark -
 
