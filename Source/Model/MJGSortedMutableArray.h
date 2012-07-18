@@ -13,7 +13,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MJGSortedMutableArray : NSObject
+@interface MJGSortedMutableArray : NSObject <NSFastEnumeration>
 
 - (id)initWithDescriptors:(NSArray*)descriptors;
 - (id)initWithComparator:(NSComparator)comparator;

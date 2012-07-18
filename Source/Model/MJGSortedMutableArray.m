@@ -100,4 +100,11 @@
     return [_backingArray copy];
 }
 
+
+#pragma mark - NSFastEnumeration
+
+- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id [])buffer count:(NSUInteger)len {
+    return [_backingArray countByEnumeratingWithState:state objects:buffer count:len];
+}
+
 @end
