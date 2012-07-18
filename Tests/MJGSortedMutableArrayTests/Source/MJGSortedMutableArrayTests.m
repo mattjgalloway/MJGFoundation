@@ -74,4 +74,19 @@ NSComparisonResult compareNumbers(NSNumber *obj1, NSNumber *obj2, void *context)
     STAssertEquals([_array addObject:[NSNumber numberWithInt:3]], (NSUInteger)3, @"Inserted at incorrect location");
 }
 
+- (void)testEnumerating {
+    NSArray *descriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"intValue" ascending:YES]];
+    self.array = [[MJGSortedMutableArray alloc] initWithDescriptors:descriptors];
+    [_array addObject:[NSNumber numberWithInt:0]];
+    [_array addObject:[NSNumber numberWithInt:1]];
+    [_array addObject:[NSNumber numberWithInt:2]];
+    [_array addObject:[NSNumber numberWithInt:3]];
+    [_array addObject:[NSNumber numberWithInt:4]];
+    
+    int i = 0;
+    for (NSNumber *obj in _array) {
+        STAssertEquals([obj intValue], i++, @"Incorrect value returned");
+    }
+}
+
 @end
