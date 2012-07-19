@@ -64,8 +64,18 @@
 
 - (id)initWithSelector:(SEL)selector {
     if ((self = [self init])) {
+        NSMethodSignature *methodSignature = [NSNumber instanceMethodSignatureForSelector:@selector(compare:)];
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:methodSignature];
+        [invocation setSelector:selector];
         self.comparator = ^NSComparisonResult(id obj1, id obj2) {
-            return [obj1 performSelector:selector withObject:obj2];
+            [invocation setTarget:obj1];
+            [invocation setArgument:&obj2 atIndex:2];
+            [invocation invoke];
+            
+            NSComparisonResult returnValue;
+            [invocation getReturnValue:&returnValue];
+            
+            return returnValue;
         };
     }
     return self;
