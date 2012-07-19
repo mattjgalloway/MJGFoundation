@@ -22,7 +22,9 @@
 
 - (NSUInteger)addObject:(id)obj;
 - (void)removeObjectAtIndex:(NSUInteger)index;
+- (void)removeAllObjects;
 - (id)objectAtIndex:(NSUInteger)index;
 - (NSArray*)allObjects;
+- (NSUInteger)count;
 
 @end

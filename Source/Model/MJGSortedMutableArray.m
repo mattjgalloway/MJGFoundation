@@ -110,12 +110,20 @@
     [_backingArray removeObjectAtIndex:index];
 }
 
+- (void)removeAllObjects {
+    [_backingArray removeAllObjects];
+}
+
 - (id)objectAtIndex:(NSUInteger)index {
     return [_backingArray objectAtIndex:index];
 }
 
 - (NSArray*)allObjects {
     return [_backingArray copy];
+}
+
+- (NSUInteger)count {
+    return _backingArray.count;
 }
 
 
