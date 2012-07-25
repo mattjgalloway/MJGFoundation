@@ -106,6 +106,36 @@
     return addedIndex;
 }
 
+- (NSArray*)addObjects:(NSArray*)objects {
+    NSUInteger *indices = malloc(sizeof(NSUInteger) * objects.count);
+    [self addObjects:objects addedIndices:indices];
+    
+    NSMutableArray *returnArray = [NSMutableArray new];
+    for (NSUInteger i = 0; i < objects.count; i++) {
+        [returnArray addObject:[NSNumber numberWithUnsignedInteger:indices[i]]];
+    }
+    
+    if (indices) {
+        free(indices);
+    }
+    
+    return [returnArray copy];
+}
+
+- (void)addObjects:(NSArray*)objects addedIndices:(NSUInteger*)indices {
+    [objects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSUInteger index = [self addObject:obj];
+        if (indices) {
+            indices[idx] = index;
+            for (NSUInteger i = 0; i < idx; i++) {
+                if (indices[i] >= index) {
+                    indices[i] = indices[i] + 1;
+                }
+            }
+        }
+    }];
+}
+
 - (void)removeObjectAtIndex:(NSUInteger)index {
     [_backingArray removeObjectAtIndex:index];
 }
