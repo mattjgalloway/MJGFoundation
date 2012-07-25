@@ -89,4 +89,25 @@ NSComparisonResult compareNumbers(NSNumber *obj1, NSNumber *obj2, void *context)
     }
 }
 
+- (void)testMultipleInsertion {
+    NSArray *descriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"intValue" ascending:YES]];
+    self.array = [[MJGSortedMutableArray alloc] initWithDescriptors:descriptors];
+    
+    NSArray *objectsToAdd = [[NSArray alloc] initWithObjects:
+                             [NSNumber numberWithInt:0],
+                             [NSNumber numberWithInt:2],
+                             [NSNumber numberWithInt:4],
+                             [NSNumber numberWithInt:1],
+                             [NSNumber numberWithInt:3],
+                             nil];
+    NSArray *addedIndices = [_array addObjects:objectsToAdd];
+    
+    STAssertEquals(addedIndices.count, (NSUInteger)5, @"Incorrect number of indices returned");
+    STAssertEquals([[addedIndices objectAtIndex:0] unsignedIntegerValue], (NSUInteger)0, @"Incorrect index returned");
+    STAssertEquals([[addedIndices objectAtIndex:1] unsignedIntegerValue], (NSUInteger)2, @"Incorrect index returned");
+    STAssertEquals([[addedIndices objectAtIndex:2] unsignedIntegerValue], (NSUInteger)4, @"Incorrect index returned");
+    STAssertEquals([[addedIndices objectAtIndex:3] unsignedIntegerValue], (NSUInteger)1, @"Incorrect index returned");
+    STAssertEquals([[addedIndices objectAtIndex:4] unsignedIntegerValue], (NSUInteger)3, @"Incorrect index returned");
+}
+
 @end
