@@ -38,4 +38,4 @@ This project uses ARC.
 
 ## Author
 
-MJGFoundation is written and maintained by Matt Galloway <http://iphone.galloway.me.uk>.
+MJGFoundation is written and maintained by Matt Galloway <http://www.galloway.me.uk>.
