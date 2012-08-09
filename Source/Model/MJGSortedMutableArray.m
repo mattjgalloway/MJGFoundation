@@ -169,6 +169,30 @@
 }
 
 
+#pragma mark - Block methods
+
+- (void)enumerateObjectsUsingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block {
+    [_backingArray enumerateObjectsUsingBlock:^(id obj2, NSUInteger idx2, BOOL *stop2) {
+        block(obj2, idx2, stop2);
+    }];
+}
+
+- (void)enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block {
+    [_backingArray enumerateObjectsWithOptions:opts
+                                    usingBlock:^(id obj2, NSUInteger idx2, BOOL *stop2) {
+                                        block(obj2, idx2, stop2);
+                                    }];
+}
+
+- (void)enumerateObjectsAtIndexes:(NSIndexSet *)s options:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block {
+    [_backingArray enumerateObjectsAtIndexes:s
+                                     options:opts
+                                  usingBlock:^(id obj2, NSUInteger idx2, BOOL *stop2) {
+                                      block(obj2, idx2, stop2);
+                                  }];
+}
+
+
 #pragma mark - NSFastEnumeration
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id [])buffer count:(NSUInteger)len {
