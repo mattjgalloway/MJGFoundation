@@ -140,12 +140,24 @@
     [_backingArray removeObjectAtIndex:index];
 }
 
+- (void)removeObjectsInRange:(NSRange)range {
+    [_backingArray removeObjectsInRange:range];
+}
+
 - (void)removeAllObjects {
     [_backingArray removeAllObjects];
 }
 
+- (void)removeLastObject {
+    [_backingArray removeLastObject];
+}
+
 - (id)objectAtIndex:(NSUInteger)index {
     return [_backingArray objectAtIndex:index];
+}
+
+- (id)lastObject {
+    return [_backingArray lastObject];
 }
 
 - (NSArray*)allObjects {

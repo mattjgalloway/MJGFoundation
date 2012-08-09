@@ -24,8 +24,11 @@
 - (NSArray*)addObjects:(NSArray*)objects;
 - (void)addObjects:(NSArray*)objects addedIndices:(NSUInteger*)indices;
 - (void)removeObjectAtIndex:(NSUInteger)index;
+- (void)removeObjectsInRange:(NSRange)range;
 - (void)removeAllObjects;
+- (void)removeLastObject;
 - (id)objectAtIndex:(NSUInteger)index;
+- (id)lastObject;
 - (NSArray*)allObjects;
 - (NSUInteger)count;
 
