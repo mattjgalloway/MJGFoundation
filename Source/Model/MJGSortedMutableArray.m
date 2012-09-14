@@ -112,7 +112,7 @@
     
     NSMutableArray *returnArray = [NSMutableArray new];
     for (NSUInteger i = 0; i < objects.count; i++) {
-        [returnArray addObject:[NSNumber numberWithUnsignedInteger:indices[i]]];
+        [returnArray addObject:@(indices[i])];
     }
     
     if (indices) {
