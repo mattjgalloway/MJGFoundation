@@ -152,16 +152,10 @@
     [_backingArray removeLastObject];
 }
 
+#pragma mark - NSArray Primitives
+
 - (id)objectAtIndex:(NSUInteger)index {
     return [_backingArray objectAtIndex:index];
-}
-
-- (id)lastObject {
-    return [_backingArray lastObject];
-}
-
-- (NSArray*)allObjects {
-    return [_backingArray copy];
 }
 
 - (NSUInteger)count {

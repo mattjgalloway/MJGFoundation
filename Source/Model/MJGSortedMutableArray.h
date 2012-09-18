@@ -13,7 +13,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MJGSortedMutableArray : NSObject <NSFastEnumeration>
+@interface MJGSortedMutableArray : NSArray
 
 - (id)initWithDescriptors:(NSArray*)descriptors;
 - (id)initWithComparator:(NSComparator)comparator;
@@ -27,13 +27,5 @@
 - (void)removeObjectsInRange:(NSRange)range;
 - (void)removeAllObjects;
 - (void)removeLastObject;
-- (id)objectAtIndex:(NSUInteger)index;
-- (id)lastObject;
-- (NSArray*)allObjects;
-- (NSUInteger)count;
-
-- (void)enumerateObjectsUsingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block;
-- (void)enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block;
-- (void)enumerateObjectsAtIndexes:(NSIndexSet *)s options:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block;
 
 @end
