@@ -21,8 +21,7 @@
 - (id)initWithSelector:(SEL)selector;
 
 - (NSUInteger)addObject:(id)obj;
-- (NSArray*)addObjects:(NSArray*)objects;
-- (void)addObjects:(NSArray*)objects addedIndices:(NSUInteger*)indices;
+- (NSIndexSet*)addObjectsFromArray:(NSArray*)otherArray;
 - (void)removeObjectAtIndex:(NSUInteger)index;
 - (void)removeObjectsInRange:(NSRange)range;
 - (void)removeAllObjects;

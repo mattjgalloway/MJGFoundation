@@ -100,14 +100,14 @@ NSComparisonResult compareNumbers(NSNumber *obj1, NSNumber *obj2, void *context)
                              [NSNumber numberWithInt:1],
                              [NSNumber numberWithInt:3],
                              nil];
-    NSArray *addedIndices = [_array addObjects:objectsToAdd];
+    NSIndexSet *addedIndices = [_array addObjectsFromArray:objectsToAdd];
     
-    STAssertEquals(addedIndices.count, (NSUInteger)5, @"Incorrect number of indices returned");
-    STAssertEquals([[addedIndices objectAtIndex:0] unsignedIntegerValue], (NSUInteger)0, @"Incorrect index returned");
-    STAssertEquals([[addedIndices objectAtIndex:1] unsignedIntegerValue], (NSUInteger)2, @"Incorrect index returned");
-    STAssertEquals([[addedIndices objectAtIndex:2] unsignedIntegerValue], (NSUInteger)4, @"Incorrect index returned");
-    STAssertEquals([[addedIndices objectAtIndex:3] unsignedIntegerValue], (NSUInteger)1, @"Incorrect index returned");
-    STAssertEquals([[addedIndices objectAtIndex:4] unsignedIntegerValue], (NSUInteger)3, @"Incorrect index returned");
+    STAssertTrue(addedIndices.count, @"Incorrect number of indices returned");
+    STAssertTrue([addedIndices containsIndex:0], @"Incorrect index returned");
+    STAssertTrue([addedIndices containsIndex:2], @"Incorrect index returned");
+    STAssertTrue([addedIndices containsIndex:4], @"Incorrect index returned");
+    STAssertTrue([addedIndices containsIndex:1], @"Incorrect index returned");
+    STAssertTrue([addedIndices containsIndex:3], @"Incorrect index returned");
 }
 
 @end
