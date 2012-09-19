@@ -106,20 +106,20 @@
     return addedIndex;
 }
 
-- (NSArray*)addObjects:(NSArray*)objects {
-    NSUInteger *indices = malloc(sizeof(NSUInteger) * objects.count);
-    [self addObjects:objects addedIndices:indices];
+- (NSIndexSet*)addObjectsFromArray:(NSArray *)otherArray {
+    NSUInteger *indices = malloc(sizeof(NSUInteger) * otherArray.count);
+    [self addObjects:otherArray addedIndices:indices];
     
-    NSMutableArray *returnArray = [NSMutableArray new];
-    for (NSUInteger i = 0; i < objects.count; i++) {
-        [returnArray addObject:@(indices[i])];
+    NSMutableIndexSet *result = [NSMutableIndexSet indexSet];
+    for (NSUInteger i = 0; i < otherArray.count; i++) {
+        [result addIndex:indices[i]];
     }
     
     if (indices) {
         free(indices);
     }
     
-    return [returnArray copy];
+    return result;
 }
 
 - (void)addObjects:(NSArray*)objects addedIndices:(NSUInteger*)indices {
