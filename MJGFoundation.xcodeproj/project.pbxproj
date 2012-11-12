@@ -770,7 +770,7 @@
 		C9EB54B314A609CD003B4206 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Matt Galloway";
 			};
 			buildConfigurationList = C9EB54B614A609CD003B4206 /* Build configuration list for PBXProject "MJGFoundation" */;
