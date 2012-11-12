@@ -979,7 +979,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MJGFoundationUICatalog/MJGFoundationUICatalog-Prefix.pch";
+				GCC_PREFIX_HEADER = "Apps/MJGFoundationUICatalog/MJGFoundationUICatalog-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Apps/MJGFoundationUICatalog/MJGFoundationUICatalog-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -993,7 +993,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MJGFoundationUICatalog/MJGFoundationUICatalog-Prefix.pch";
+				GCC_PREFIX_HEADER = "Apps/MJGFoundationUICatalog/MJGFoundationUICatalog-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Apps/MJGFoundationUICatalog/MJGFoundationUICatalog-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
