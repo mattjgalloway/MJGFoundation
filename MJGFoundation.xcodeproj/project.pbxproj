@@ -21,6 +21,8 @@
 		C901CB2A14B7A86E00C3FD84 /* MJGImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CB2814B7A86E00C3FD84 /* MJGImageLoader.m */; };
 		C901CB2D14B7B3A500C3FD84 /* MJGStack.h in Headers */ = {isa = PBXBuildFile; fileRef = C901CB2B14B7B3A500C3FD84 /* MJGStack.h */; };
 		C901CB2E14B7B3A500C3FD84 /* MJGStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CB2C14B7B3A500C3FD84 /* MJGStack.m */; };
+		C904F6701651B8400080BD8F /* MJGRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C904F66F1651B8400080BD8F /* MJGRuntimeUtilities.m */; };
+		C904F6721651B8540080BD8F /* MJGRuntimeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C904F6711651B8540080BD8F /* MJGRuntimeUtilities.h */; };
 		C909420514B84B8900BE443A /* MJGRPNCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = C909420314B84B8900BE443A /* MJGRPNCalculator.h */; };
 		C909420614B84B8900BE443A /* MJGRPNCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C909420414B84B8900BE443A /* MJGRPNCalculator.m */; };
 		C909420F14B85CA200BE443A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C909420E14B85CA200BE443A /* SenTestingKit.framework */; };
@@ -113,6 +115,8 @@
 		C901CB2814B7A86E00C3FD84 /* MJGImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGImageLoader.m; sourceTree = "<group>"; };
 		C901CB2B14B7B3A500C3FD84 /* MJGStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGStack.h; sourceTree = "<group>"; };
 		C901CB2C14B7B3A500C3FD84 /* MJGStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGStack.m; sourceTree = "<group>"; };
+		C904F66F1651B8400080BD8F /* MJGRuntimeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRuntimeUtilities.m; sourceTree = "<group>"; };
+		C904F6711651B8540080BD8F /* MJGRuntimeUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRuntimeUtilities.h; sourceTree = "<group>"; };
 		C909420314B84B8900BE443A /* MJGRPNCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRPNCalculator.h; sourceTree = "<group>"; };
 		C909420414B84B8900BE443A /* MJGRPNCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRPNCalculator.m; sourceTree = "<group>"; };
 		C909420D14B85CA200BE443A /* MJGRPNCalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJGRPNCalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,6 +288,8 @@
 				C974E3AF14DC5B2500B98A7C /* MJGObjectCache.m */,
 				C909420314B84B8900BE443A /* MJGRPNCalculator.h */,
 				C909420414B84B8900BE443A /* MJGRPNCalculator.m */,
+				C904F6711651B8540080BD8F /* MJGRuntimeUtilities.h */,
+				C904F66F1651B8400080BD8F /* MJGRuntimeUtilities.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -670,6 +676,7 @@
 				C974E41F14DF408700B98A7C /* MJGObjectCacheTests.h in Headers */,
 				C945E94F15B5F45800F560BD /* MJGSortedMutableArray.h in Headers */,
 				C92EF78215C0AA08004CC517 /* NSDictionary+MJGSortedDictionary.h in Headers */,
+				C904F6721651B8540080BD8F /* MJGRuntimeUtilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -938,6 +945,7 @@
 				C974E3B614DC5B5C00B98A7C /* MJGObjectCacheEntry.m in Sources */,
 				C945E95015B5F45800F560BD /* MJGSortedMutableArray.m in Sources */,
 				C92EF78315C0AA08004CC517 /* NSDictionary+MJGSortedDictionary.m in Sources */,
+				C904F6701651B8400080BD8F /* MJGRuntimeUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
