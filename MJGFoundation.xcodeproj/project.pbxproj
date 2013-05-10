@@ -38,6 +38,7 @@
 		C91BFD5314B2FCF300F00F47 /* MJGRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C91BFD5114B2FCF300F00F47 /* MJGRateView.m */; };
 		C92EF78215C0AA08004CC517 /* NSDictionary+MJGSortedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = C92EF78015C0AA08004CC517 /* NSDictionary+MJGSortedDictionary.h */; };
 		C92EF78315C0AA08004CC517 /* NSDictionary+MJGSortedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C92EF78115C0AA08004CC517 /* NSDictionary+MJGSortedDictionary.m */; };
+		C942D0BD173D982400B24D54 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C942D0BC173D982400B24D54 /* Default-568h@2x.png */; };
 		C945E94F15B5F45800F560BD /* MJGSortedMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = C945E94D15B5F45800F560BD /* MJGSortedMutableArray.h */; };
 		C945E95015B5F45800F560BD /* MJGSortedMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C945E94E15B5F45800F560BD /* MJGSortedMutableArray.m */; };
 		C945E99B15B6059500F560BD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C909420E14B85CA200BE443A /* SenTestingKit.framework */; };
@@ -137,6 +138,7 @@
 		C91BFD5A14B2FECA00F00F47 /* star_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_on@2x.png"; sourceTree = "<group>"; };
 		C92EF78015C0AA08004CC517 /* NSDictionary+MJGSortedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MJGSortedDictionary.h"; sourceTree = "<group>"; };
 		C92EF78115C0AA08004CC517 /* NSDictionary+MJGSortedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MJGSortedDictionary.m"; sourceTree = "<group>"; };
+		C942D0BC173D982400B24D54 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		C945E94D15B5F45800F560BD /* MJGSortedMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGSortedMutableArray.h; sourceTree = "<group>"; };
 		C945E94E15B5F45800F560BD /* MJGSortedMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGSortedMutableArray.m; sourceTree = "<group>"; };
 		C945E98D15B6051900F560BD /* MJGSortedMutableArrayTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MJGSortedMutableArrayTests-Info.plist"; sourceTree = "<group>"; };
@@ -427,6 +429,7 @@
 		C974E3FF14DF3FC600B98A7C /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				C942D0BC173D982400B24D54 /* Default-568h@2x.png */,
 				C909422B14B864A800BE443A /* MJGFoundationUICatalog */,
 			);
 			path = Apps;
@@ -819,6 +822,7 @@
 				C974E3FA14DEF5ED00B98A7C /* star_on@2x.png in Resources */,
 				C95235BB14B86E7F00B880D3 /* MainViewController~ipad.xib in Resources */,
 				C95235BC14B86E7F00B880D3 /* MainViewController~iphone.xib in Resources */,
+				C942D0BD173D982400B24D54 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
