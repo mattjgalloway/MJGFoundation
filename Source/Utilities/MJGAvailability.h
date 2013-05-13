@@ -29,11 +29,24 @@
  *       [navBar setBackgroundImage:[UIImage imageNamed:@"navbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
  *   #pragma clang diagnostic pop
  *   }
+ * 
+ *  If you use GCC instead of clang, you'll not have the "TOO NEW!" message in the warning.
+ * 
+ *   #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+ *   - (void)conditionallyUseSomeAPI {
+ *       // Check for and use the appropriate API for this iOS version
+ *   }
+ *   #pragma GCC diagnostic warning "-Wdeprecated-declarations"
+ * 
  */
 
 #import <Availability.h>
 
+#ifdef __clang__
 #define __AVAILABILITY_TOO_NEW __attribute__((deprecated("TOO NEW!"))) __attribute__((weak_import))
+#else // GCC
+#define __AVAILABILITY_TOO_NEW __attribute__((deprecated)) __attribute__((weak_import))
+#endif
 
 #ifndef __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED
 #define __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED __IPHONE_OS_VERSION_MIN_REQUIRED
