@@ -29,6 +29,16 @@
  *       [navBar setBackgroundImage:[UIImage imageNamed:@"navbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
  *   #pragma clang diagnostic pop
  *   }
+ *
+ * Or you can use the handy macros defined in this file also, like this:
+ *
+ *   UINavigationBar *navBar = self.navigationController.navigationBar;
+ *   if ([navBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
+ *   MJG_START_IGNORE_TOO_NEW
+ *       [navBar setBackgroundImage:[UIImage imageNamed:@"navbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
+ *   MJG_END_IGNORE_TOO_NEW
+ *   }
+ *
  */
 
 #import <Availability.h>
