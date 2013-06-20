@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MJGFoundation"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A collection of iOS classes & categories by Matt Galloway."
   s.homepage     = "https://github.com/mattjgalloway/MJGFoundation"
   s.license      = "BSD"
