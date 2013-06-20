@@ -33,6 +33,9 @@
 
 #import <Availability.h>
 
+#define MJG_START_IGNORE_TOO_NEW _Pragma("clang diagnostic push") _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")
+#define MJG_END_IGNORE_TOO_NEW _Pragma("clang diagnostic pop")
+
 #define __AVAILABILITY_TOO_NEW __attribute__((deprecated("TOO NEW!"))) __attribute__((weak_import))
 
 #ifndef __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED
