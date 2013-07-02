@@ -152,6 +152,13 @@
 }
 
 
+#pragma mark - NSArray overridden methods
+
+- (NSUInteger)indexOfObject:(id)anObject {
+    return [self indexOfObject:anObject inSortedRange:NSMakeRange(0, _backingArray.count) options:NSBinarySearchingFirstEqual usingComparator:_comparator];
+}
+
+
 #pragma mark - Block methods
 
 - (void)enumerateObjectsUsingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block {
