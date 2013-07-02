@@ -140,7 +140,8 @@
     [_backingArray removeLastObject];
 }
 
-#pragma mark - NSArray Primitives
+
+#pragma mark - NSArray primitives
 
 - (id)objectAtIndex:(NSUInteger)index {
     return [_backingArray objectAtIndex:index];
