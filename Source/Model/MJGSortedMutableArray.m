@@ -89,20 +89,8 @@
 #pragma mark -
 
 - (NSUInteger)addObject:(id)obj {
-    __block NSUInteger addedIndex = NSNotFound;
-    [_backingArray enumerateObjectsUsingBlock:^(id obj2, NSUInteger idx, BOOL *stop) {
-        NSComparisonResult result = _comparator(obj, obj2);
-        if (result != NSOrderedDescending) {
-            addedIndex = idx;
-            [_backingArray insertObject:obj atIndex:addedIndex];
-            *stop = YES;
-        }
-    }];
-    
-    if (addedIndex == NSNotFound) {
-        [_backingArray addObject:obj];
-        addedIndex = (_backingArray.count - 1);
-    }
+    NSUInteger addedIndex = [_backingArray indexOfObject:obj inSortedRange:NSMakeRange(0, _backingArray.count) options:NSBinarySearchingInsertionIndex usingComparator:_comparator];
+    [_backingArray insertObject:obj atIndex:addedIndex];
     return addedIndex;
 }
 
