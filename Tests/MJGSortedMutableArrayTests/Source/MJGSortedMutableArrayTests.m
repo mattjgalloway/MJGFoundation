@@ -110,4 +110,33 @@ NSComparisonResult compareNumbers(NSNumber *obj1, NSNumber *obj2, void *context)
     STAssertTrue([addedIndices containsIndex:3], @"Incorrect index returned");
 }
 
+- (void)testIndexOfObject {
+    NSArray *descriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"intValue" ascending:YES]];
+    self.array = [[MJGSortedMutableArray alloc] initWithDescriptors:descriptors];
+    
+    NSArray *objectsToAdd = [[NSArray alloc] initWithObjects:
+                             [NSNumber numberWithInt:0],
+                             [NSNumber numberWithInt:2],
+                             [NSNumber numberWithInt:4],
+                             [NSNumber numberWithInt:1],
+                             [NSNumber numberWithInt:3],
+                             nil];
+    [_array addObjectsFromArray:objectsToAdd];
+    
+    NSUInteger indexOf0 = [_array indexOfObject:@(0)];
+    STAssertEquals(indexOf0, (NSUInteger)0, @"Incorrect index of value");
+    
+    NSUInteger indexOf1 = [_array indexOfObject:@(1)];
+    STAssertEquals(indexOf1, (NSUInteger)1, @"Incorrect index of value");
+    
+    NSUInteger indexOf2 = [_array indexOfObject:@(2)];
+    STAssertEquals(indexOf2, (NSUInteger)2, @"Incorrect index of value");
+    
+    NSUInteger indexOf3 = [_array indexOfObject:@(3)];
+    STAssertEquals(indexOf3, (NSUInteger)3, @"Incorrect index of value");
+    
+    NSUInteger indexOf4 = [_array indexOfObject:@(4)];
+    STAssertEquals(indexOf4, (NSUInteger)4, @"Incorrect index of value");
+}
+
 @end
