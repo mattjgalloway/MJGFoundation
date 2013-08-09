@@ -19,6 +19,12 @@
  *   // The rest of your prefix header as normal
  *   #import <UIKit/UIKit.h>
  * 
+ * For OSX, you also get the warnings:
+ * 
+ * YourOSXPrefixHeader.pch
+ *   #define __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED __MAC_10_7
+ *   #import "MJGAvailability.h"
+ *
  * If you want to suppress a single warning (i.e. because you know that what you're doing is 
  * actually OK) then you can do something like this:
  *
