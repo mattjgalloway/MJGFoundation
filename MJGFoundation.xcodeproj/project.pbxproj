@@ -21,6 +21,8 @@
 		C901CB2A14B7A86E00C3FD84 /* MJGImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CB2814B7A86E00C3FD84 /* MJGImageLoader.m */; };
 		C901CB2D14B7B3A500C3FD84 /* MJGStack.h in Headers */ = {isa = PBXBuildFile; fileRef = C901CB2B14B7B3A500C3FD84 /* MJGStack.h */; };
 		C901CB2E14B7B3A500C3FD84 /* MJGStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CB2C14B7B3A500C3FD84 /* MJGStack.m */; };
+		C902A1AF1822F0AB00FC231C /* MJGActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = C902A1AD1822F0AB00FC231C /* MJGActionSheet.h */; };
+		C902A1B01822F0AB00FC231C /* MJGActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C902A1AE1822F0AB00FC231C /* MJGActionSheet.m */; };
 		C902A1B31822F0B200FC231C /* MJGSplashScreenView.h in Headers */ = {isa = PBXBuildFile; fileRef = C902A1B11822F0B200FC231C /* MJGSplashScreenView.h */; };
 		C902A1B41822F0B200FC231C /* MJGSplashScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = C902A1B21822F0B200FC231C /* MJGSplashScreenView.m */; };
 		C904F6701651B8400080BD8F /* MJGRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C904F66F1651B8400080BD8F /* MJGRuntimeUtilities.m */; };
@@ -118,6 +120,8 @@
 		C901CB2814B7A86E00C3FD84 /* MJGImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGImageLoader.m; sourceTree = "<group>"; };
 		C901CB2B14B7B3A500C3FD84 /* MJGStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGStack.h; sourceTree = "<group>"; };
 		C901CB2C14B7B3A500C3FD84 /* MJGStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGStack.m; sourceTree = "<group>"; };
+		C902A1AD1822F0AB00FC231C /* MJGActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGActionSheet.h; sourceTree = "<group>"; };
+		C902A1AE1822F0AB00FC231C /* MJGActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGActionSheet.m; sourceTree = "<group>"; };
 		C902A1B11822F0B200FC231C /* MJGSplashScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGSplashScreenView.h; sourceTree = "<group>"; };
 		C902A1B21822F0B200FC231C /* MJGSplashScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGSplashScreenView.m; sourceTree = "<group>"; };
 		C904F66F1651B8400080BD8F /* MJGRuntimeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRuntimeUtilities.m; sourceTree = "<group>"; };
@@ -341,6 +345,8 @@
 		C91BFD4F14B2FCF300F00F47 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C902A1AD1822F0AB00FC231C /* MJGActionSheet.h */,
+				C902A1AE1822F0AB00FC231C /* MJGActionSheet.m */,
 				C901CAFA14B7921200C3FD84 /* MJGLoadableImageView.h */,
 				C901CAFB14B7921200C3FD84 /* MJGLoadableImageView.m */,
 				C91BFD5014B2FCF300F00F47 /* MJGRateView.h */,
@@ -670,6 +676,7 @@
 				C901CABF14B7844A00C3FD84 /* MJGImageGalleryViewController.h in Headers */,
 				C901CAFC14B7921200C3FD84 /* MJGLoadableImageView.h in Headers */,
 				C901CB2914B7A86E00C3FD84 /* MJGImageLoader.h in Headers */,
+				C902A1AF1822F0AB00FC231C /* MJGActionSheet.h in Headers */,
 				C901CB2D14B7B3A500C3FD84 /* MJGStack.h in Headers */,
 				C909420514B84B8900BE443A /* MJGRPNCalculator.h in Headers */,
 				C95235B314B86E3000B880D3 /* AppDelegate.h in Headers */,
@@ -947,6 +954,7 @@
 				C901CABE14B7844A00C3FD84 /* MJGFullscreenWebViewController.m in Sources */,
 				C901CAC014B7844A00C3FD84 /* MJGImageGalleryViewController.m in Sources */,
 				C901CAFD14B7921200C3FD84 /* MJGLoadableImageView.m in Sources */,
+				C902A1B01822F0AB00FC231C /* MJGActionSheet.m in Sources */,
 				C901CB2A14B7A86E00C3FD84 /* MJGImageLoader.m in Sources */,
 				C901CB2E14B7B3A500C3FD84 /* MJGStack.m in Sources */,
 				C909420614B84B8900BE443A /* MJGRPNCalculator.m in Sources */,
