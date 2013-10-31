@@ -25,6 +25,8 @@
 		C902A1B01822F0AB00FC231C /* MJGActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C902A1AE1822F0AB00FC231C /* MJGActionSheet.m */; };
 		C902A1B31822F0B200FC231C /* MJGSplashScreenView.h in Headers */ = {isa = PBXBuildFile; fileRef = C902A1B11822F0B200FC231C /* MJGSplashScreenView.h */; };
 		C902A1B41822F0B200FC231C /* MJGSplashScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = C902A1B21822F0B200FC231C /* MJGSplashScreenView.m */; };
+		C902A1BA1822F49400FC231C /* MJGAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = C902A1B81822F49400FC231C /* MJGAlertView.h */; };
+		C902A1BB1822F49400FC231C /* MJGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C902A1B91822F49400FC231C /* MJGAlertView.m */; };
 		C904F6701651B8400080BD8F /* MJGRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C904F66F1651B8400080BD8F /* MJGRuntimeUtilities.m */; };
 		C904F6721651B8540080BD8F /* MJGRuntimeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C904F6711651B8540080BD8F /* MJGRuntimeUtilities.h */; };
 		C909420514B84B8900BE443A /* MJGRPNCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = C909420314B84B8900BE443A /* MJGRPNCalculator.h */; };
@@ -124,6 +126,8 @@
 		C902A1AE1822F0AB00FC231C /* MJGActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGActionSheet.m; sourceTree = "<group>"; };
 		C902A1B11822F0B200FC231C /* MJGSplashScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGSplashScreenView.h; sourceTree = "<group>"; };
 		C902A1B21822F0B200FC231C /* MJGSplashScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGSplashScreenView.m; sourceTree = "<group>"; };
+		C902A1B81822F49400FC231C /* MJGAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGAlertView.h; sourceTree = "<group>"; };
+		C902A1B91822F49400FC231C /* MJGAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGAlertView.m; sourceTree = "<group>"; };
 		C904F66F1651B8400080BD8F /* MJGRuntimeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRuntimeUtilities.m; sourceTree = "<group>"; };
 		C904F6711651B8540080BD8F /* MJGRuntimeUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRuntimeUtilities.h; sourceTree = "<group>"; };
 		C909420314B84B8900BE443A /* MJGRPNCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRPNCalculator.h; sourceTree = "<group>"; };
@@ -347,6 +351,8 @@
 			children = (
 				C902A1AD1822F0AB00FC231C /* MJGActionSheet.h */,
 				C902A1AE1822F0AB00FC231C /* MJGActionSheet.m */,
+				C902A1B81822F49400FC231C /* MJGAlertView.h */,
+				C902A1B91822F49400FC231C /* MJGAlertView.m */,
 				C901CAFA14B7921200C3FD84 /* MJGLoadableImageView.h */,
 				C901CAFB14B7921200C3FD84 /* MJGLoadableImageView.m */,
 				C91BFD5014B2FCF300F00F47 /* MJGRateView.h */,
@@ -668,6 +674,7 @@
 				C9EB550E14A60B60003B4206 /* UIButton-MJGAdditions.h in Headers */,
 				C9EB551014A60B60003B4206 /* UIColor-MJGAdditions.h in Headers */,
 				C9EB551214A60B60003B4206 /* UIImage-MJGScaling.h in Headers */,
+				C902A1BA1822F49400FC231C /* MJGAlertView.h in Headers */,
 				C9EB551E14A6112D003B4206 /* MJGFoundation.h in Headers */,
 				C91BFD5214B2FCF300F00F47 /* MJGRateView.h in Headers */,
 				C901CAB914B7844A00C3FD84 /* MJGChoiceViewController.h in Headers */,
@@ -963,6 +970,7 @@
 				C974E3F514DEF3B600B98A7C /* ExampleMJGRateViewViewController.m in Sources */,
 				C974E3B114DC5B2500B98A7C /* MJGObjectCache.m in Sources */,
 				C974E3B614DC5B5C00B98A7C /* MJGObjectCacheEntry.m in Sources */,
+				C902A1BB1822F49400FC231C /* MJGAlertView.m in Sources */,
 				C945E95015B5F45800F560BD /* MJGSortedMutableArray.m in Sources */,
 				C92EF78315C0AA08004CC517 /* NSDictionary+MJGSortedDictionary.m in Sources */,
 				C904F6701651B8400080BD8F /* MJGRuntimeUtilities.m in Sources */,
