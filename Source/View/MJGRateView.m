@@ -104,7 +104,7 @@
                                                  8, 
                                                  0, 
                                                  colorSpace, 
-                                                 kCGImageAlphaNone);
+                                                 (CGBitmapInfo)kCGImageAlphaNone);
 	
 	if (cutLeftSide) {
         CGContextSetRGBFillColor(context, 0.0f, 0.0f, 0.0f, 1.0f);
