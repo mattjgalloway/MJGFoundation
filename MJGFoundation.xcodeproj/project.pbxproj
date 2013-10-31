@@ -21,6 +21,8 @@
 		C901CB2A14B7A86E00C3FD84 /* MJGImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CB2814B7A86E00C3FD84 /* MJGImageLoader.m */; };
 		C901CB2D14B7B3A500C3FD84 /* MJGStack.h in Headers */ = {isa = PBXBuildFile; fileRef = C901CB2B14B7B3A500C3FD84 /* MJGStack.h */; };
 		C901CB2E14B7B3A500C3FD84 /* MJGStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C901CB2C14B7B3A500C3FD84 /* MJGStack.m */; };
+		C902A1B31822F0B200FC231C /* MJGSplashScreenView.h in Headers */ = {isa = PBXBuildFile; fileRef = C902A1B11822F0B200FC231C /* MJGSplashScreenView.h */; };
+		C902A1B41822F0B200FC231C /* MJGSplashScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = C902A1B21822F0B200FC231C /* MJGSplashScreenView.m */; };
 		C904F6701651B8400080BD8F /* MJGRuntimeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C904F66F1651B8400080BD8F /* MJGRuntimeUtilities.m */; };
 		C904F6721651B8540080BD8F /* MJGRuntimeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C904F6711651B8540080BD8F /* MJGRuntimeUtilities.h */; };
 		C909420514B84B8900BE443A /* MJGRPNCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = C909420314B84B8900BE443A /* MJGRPNCalculator.h */; };
@@ -116,6 +118,8 @@
 		C901CB2814B7A86E00C3FD84 /* MJGImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGImageLoader.m; sourceTree = "<group>"; };
 		C901CB2B14B7B3A500C3FD84 /* MJGStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGStack.h; sourceTree = "<group>"; };
 		C901CB2C14B7B3A500C3FD84 /* MJGStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGStack.m; sourceTree = "<group>"; };
+		C902A1B11822F0B200FC231C /* MJGSplashScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGSplashScreenView.h; sourceTree = "<group>"; };
+		C902A1B21822F0B200FC231C /* MJGSplashScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGSplashScreenView.m; sourceTree = "<group>"; };
 		C904F66F1651B8400080BD8F /* MJGRuntimeUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGRuntimeUtilities.m; sourceTree = "<group>"; };
 		C904F6711651B8540080BD8F /* MJGRuntimeUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRuntimeUtilities.h; sourceTree = "<group>"; };
 		C909420314B84B8900BE443A /* MJGRPNCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGRPNCalculator.h; sourceTree = "<group>"; };
@@ -343,6 +347,8 @@
 				C91BFD5114B2FCF300F00F47 /* MJGRateView.m */,
 				C9D7F05414D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.h */,
 				C9D7F05514D97CA8002C2AC1 /* MJG2DPinchGestureRecognizer.m */,
+				C902A1B11822F0B200FC231C /* MJGSplashScreenView.h */,
+				C902A1B21822F0B200FC231C /* MJGSplashScreenView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -675,6 +681,7 @@
 				C974E3B014DC5B2500B98A7C /* MJGObjectCache.h in Headers */,
 				C974E3B514DC5B5C00B98A7C /* MJGObjectCacheEntry.h in Headers */,
 				C974E3F414DEF3B600B98A7C /* ExampleMJGRateViewViewController.h in Headers */,
+				C902A1B31822F0B200FC231C /* MJGSplashScreenView.h in Headers */,
 				C974E41E14DF408700B98A7C /* MJGObjectCacheTests-Prefix.pch in Headers */,
 				C974E41F14DF408700B98A7C /* MJGObjectCacheTests.h in Headers */,
 				C945E94F15B5F45800F560BD /* MJGSortedMutableArray.h in Headers */,
@@ -927,6 +934,7 @@
 				C9EB54FF14A60B60003B4206 /* NSDate-MJGFormat.m in Sources */,
 				C9EB550314A60B60003B4206 /* NSDictionary-MJGURLEncode.m in Sources */,
 				C9EB550514A60B60003B4206 /* NSError-MJGAlert.m in Sources */,
+				C902A1B41822F0B200FC231C /* MJGSplashScreenView.m in Sources */,
 				C9EB550714A60B60003B4206 /* NSNumber-MJGRandom.m in Sources */,
 				C9EB550B14A60B60003B4206 /* NSString-MJGCrypto.m in Sources */,
 				C9EB550D14A60B60003B4206 /* NSString-MJGURLEncode.m in Sources */,
