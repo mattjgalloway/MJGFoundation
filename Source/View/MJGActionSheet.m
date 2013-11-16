@@ -52,6 +52,10 @@
 
 #pragma mark -
 
+- (NSInteger)addButtonWithTitle:(NSString *)title {
+    return [self addButtonWithTitle:title actionBlock:nil];
+}
+
 - (NSInteger)addButtonWithTitle:(NSString *)title actionBlock:(MJGActionSheetActionBlock)actionBlock {
     NSInteger idx = [super addButtonWithTitle:title];
     [_actionBlocks insertObject:(actionBlock ?: ^(MJGActionSheet *actionSheet, NSInteger idx){}) atIndex:idx];
