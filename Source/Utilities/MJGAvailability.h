@@ -19,6 +19,12 @@
  *   // The rest of your prefix header as normal
  *   #import <UIKit/UIKit.h>
  * 
+ * For OSX, you also get the warnings:
+ * 
+ * YourOSXPrefixHeader.pch
+ *   #define __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED __MAC_10_7
+ *   #import "MJGAvailability.h"
+ *
  * If you want to suppress a single warning (i.e. because you know that what you're doing is 
  * actually OK) then you can do something like this:
  *
@@ -47,6 +53,8 @@
 #define MJG_END_IGNORE_TOO_NEW _Pragma("clang diagnostic pop")
 
 #define __AVAILABILITY_TOO_NEW __attribute__((deprecated("TOO NEW!"))) __attribute__((weak_import))
+
+#if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
 
 #ifndef __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED
 #define __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED __IPHONE_OS_VERSION_MIN_REQUIRED
@@ -130,3 +138,64 @@
     #undef __AVAILABILITY_INTERNAL__IPHONE_7_0
     #define __AVAILABILITY_INTERNAL__IPHONE_7_0 __AVAILABILITY_TOO_NEW
 #endif
+
+#endif // end of #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
+
+#if defined(__MAC_OS_X_VERSION_MIN_REQUIRED)
+
+#ifndef __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED
+#define __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED __MAC_OS_X_VERSION_MIN_REQUIRED
+#endif
+
+#if __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED < __MAC_OS_X_VERSION_MIN_REQUIRED
+#error You cannot ask for a soft max version which is less than the deployment target
+#endif
+
+#if __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED < __MAC_10_0
+#undef __AVAILABILITY_INTERNAL__MAC_10_0
+#define __AVAILABILITY_INTERNAL__MAC_10_0 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED < __MAC_10_1
+#undef __AVAILABILITY_INTERNAL__MAC_10_1
+#define __AVAILABILITY_INTERNAL__MAC_10_1 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED < __MAC_10_2
+#undef __AVAILABILITY_INTERNAL__MAC_10_2
+#define __AVAILABILITY_INTERNAL__MAC_10_2 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED < __MAC_10_3
+#undef __AVAILABILITY_INTERNAL__MAC_10_3
+#define __AVAILABILITY_INTERNAL__MAC_10_3 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED < __MAC_10_4
+#undef __AVAILABILITY_INTERNAL__MAC_10_4
+#define __AVAILABILITY_INTERNAL__MAC_10_4 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED < __MAC_10_5
+#undef __AVAILABILITY_INTERNAL__MAC_10_5
+#define __AVAILABILITY_INTERNAL__MAC_10_5 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED < __MAC_10_6
+#undef __AVAILABILITY_INTERNAL__MAC_10_6
+#define __AVAILABILITY_INTERNAL__MAC_10_6 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED < __MAC_10_7
+#undef __AVAILABILITY_INTERNAL__MAC_10_7
+#define __AVAILABILITY_INTERNAL__MAC_10_7 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED < __MAC_10_8
+#undef __AVAILABILITY_INTERNAL__MAC_10_8
+#define __AVAILABILITY_INTERNAL__MAC_10_8 __AVAILABILITY_TOO_NEW
+#endif
+
+#endif // end of #if defined(__MAC_OS_X_VERSION_MIN_REQUIRED)
+
+
