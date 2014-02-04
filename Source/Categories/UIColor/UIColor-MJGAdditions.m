@@ -75,21 +75,31 @@
     return (blackDiff > whiteDiff) ? black : white;
 }
 
-- (float)luminosityDifference:(UIColor*)otherColor {
-    int numComponentsA = CGColorGetNumberOfComponents(self.CGColor);
-    int numComponentsB = CGColorGetNumberOfComponents(otherColor.CGColor);
-    
-    if (numComponentsA == numComponentsB && numComponentsA == 4) {
-        const float *rgbA = CGColorGetComponents(self.CGColor);
-        const float *rgbB = CGColorGetComponents(otherColor.CGColor);
-        
-        float l1 = 0.2126 * pow(rgbA[0], 2.2f) + 
-                   0.7152 * pow(rgbA[1], 2.2f) + 
-                   0.0722 * pow(rgbA[2], 2.2f);
-        float l2 = 0.2126 * pow(rgbB[0], 2.2f) + 
-                   0.7152 * pow(rgbB[1], 2.2f) + 
-                   0.0722 * pow(rgbB[2], 2.2f);
-        
+- (CGFloat)luminosity {
+    CGFloat red;
+    CGFloat green;
+    CGFloat blue;
+    CGFloat alpha;
+
+    BOOL success = [self getRed:&red green:&green blue:&blue alpha:&alpha];
+
+    if (success)
+        return 0.2126 * pow(red, 2.2f) + 0.7152 * pow(green, 2.2f) + 0.0722 * pow(blue, 2.2f);
+
+    CGFloat white;
+
+    success = [self getWhite:&white alpha:&alpha];
+    if (success)
+        return pow(white, 2.2f);
+
+    return -1;
+}
+
+- (CGFloat)luminosityDifference:(UIColor*)otherColor {
+    CGFloat l1 = [self luminosity];
+    CGFloat l2 = [otherColor luminosity];
+
+    if (l1 >= 0 && l2 >= 0) {
         if (l1 > l2) {
             return (l1+0.05f) / (l2+0.05f);
         } else {
