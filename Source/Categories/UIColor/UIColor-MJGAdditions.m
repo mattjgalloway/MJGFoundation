@@ -91,9 +91,9 @@
                    0.0722 * pow(rgbB[2], 2.2f);
         
         if (l1 > l2) {
-            return (l1+0.05f) / (l2/0.05f);
+            return (l1+0.05f) / (l2+0.05f);
         } else {
-            return (l2+0.05f) / (l1/0.05f);
+            return (l2+0.05f) / (l1+0.05f);
         }
     }
     
