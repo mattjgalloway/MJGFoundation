@@ -13,6 +13,7 @@
 + (UIColor*)colorWithHexValue:(NSString*)hex;
 
 - (UIColor*)blackOrWhiteContrastingColor;
-- (float)luminosityDifference:(UIColor*)otherColor;
+- (CGFloat)luminosity;
+- (CGFloat)luminosityDifference:(UIColor*)otherColor;
 
 @end
