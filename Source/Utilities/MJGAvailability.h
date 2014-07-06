@@ -213,7 +213,7 @@
 
 #endif // end of #if defined(__MAC_OS_X_VERSION_MIN_REQUIRED)
 
-// next redefinitions required since SDK 7
+#if (defined(__IPHONE_7_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0) || (defined(__MAC_10_9) &&  __MAC_OS_X_VERSION_MAX_ALLOWED >= __MAC_10_9)
 #include <CoreFoundation/CFAvailability.h>
 #undef CF_AVAILABLE
 #define CF_AVAILABLE(_mac, _ios) __OSX_AVAILABLE_STARTING(__MAC_##_mac, __IPHONE_##_ios)
@@ -221,4 +221,5 @@
 #define CF_AVAILABLE_MAC(_mac) __OSX_AVAILABLE_STARTING(__MAC_##_mac, __IPHONE_NA)
 #undef CF_AVAILABLE_IOS
 #define CF_AVAILABLE_IOS(_ios) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_##_ios)
+#endif // if iOS SDK >= 7.0 || OSX SDK >= 10.9
 
