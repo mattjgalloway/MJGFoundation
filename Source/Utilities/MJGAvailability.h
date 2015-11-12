@@ -8,24 +8,24 @@
 
 /**
  * Example usage:
- *   If you want to see if you're using methods that are only defined in iOS 4.0 and lower 
- *   then you would use the following. Replace the __IPHONE_4_0 with whatever other macro 
+ *   If you want to see if you're using methods that are only defined in iOS 4.0 and lower
+ *   then you would use the following. Replace the __IPHONE_4_0 with whatever other macro
  *   you require. See Availability.h for iOS versions these relate to.
- * 
+ *
  * YourProjectPrefixHeader.pch:
  *   #define __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED __IPHONE_4_0
  *   #import "MJGAvailability.h"
- *   
+ *
  *   // The rest of your prefix header as normal
  *   #import <UIKit/UIKit.h>
- * 
+ *
  * For OSX, you also get the warnings:
- * 
+ *
  * YourOSXPrefixHeader.pch
  *   #define __MAC_OS_X_VERSION_SOFT_MAX_REQUIRED __MAC_10_7
  *   #import "MJGAvailability.h"
  *
- * If you want to suppress a single warning (i.e. because you know that what you're doing is 
+ * If you want to suppress a single warning (i.e. because you know that what you're doing is
  * actually OK) then you can do something like this:
  *
  *   UINavigationBar *navBar = self.navigationController.navigationBar;
@@ -149,6 +149,41 @@
     #define __AVAILABILITY_INTERNAL__IPHONE_8_0 __AVAILABILITY_TOO_NEW
 #endif
 
+#if __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED < __IPHONE_8_1
+    #undef __AVAILABILITY_INTERNAL__IPHONE_8_1
+    #define __AVAILABILITY_INTERNAL__IPHONE_8_1 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED < __IPHONE_8_2
+    #undef __AVAILABILITY_INTERNAL__IPHONE_8_2
+    #define __AVAILABILITY_INTERNAL__IPHONE_8_2 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED < __IPHONE_8_3
+    #undef __AVAILABILITY_INTERNAL__IPHONE_8_3
+    #define __AVAILABILITY_INTERNAL__IPHONE_8_3 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED < __IPHONE_8_4
+    #undef __AVAILABILITY_INTERNAL__IPHONE_8_4
+    #define __AVAILABILITY_INTERNAL__IPHONE_8_4 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED < __IPHONE_9_0
+    #undef __AVAILABILITY_INTERNAL__IPHONE_9_0
+    #define __AVAILABILITY_INTERNAL__IPHONE_9_0 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED < __IPHONE_9_1
+    #undef __AVAILABILITY_INTERNAL__IPHONE_9_1
+    #define __AVAILABILITY_INTERNAL__IPHONE_9_1 __AVAILABILITY_TOO_NEW
+#endif
+
+#if __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED < __IPHONE_9_2
+    #undef __AVAILABILITY_INTERNAL__IPHONE_9_2
+    #define __AVAILABILITY_INTERNAL__IPHONE_9_2 __AVAILABILITY_TOO_NEW
+#endif
+
 #endif // end of #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
 
 #if defined(__MAC_OS_X_VERSION_MIN_REQUIRED)
@@ -222,4 +257,3 @@
 #undef CF_AVAILABLE_IOS
 #define CF_AVAILABLE_IOS(_ios) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_##_ios)
 #endif // if iOS SDK >= 7.0 || OSX SDK >= 10.9
-
